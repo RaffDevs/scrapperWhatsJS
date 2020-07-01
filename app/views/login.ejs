@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<link rel="stylesheet" href="/css/login.css">
+<title>WhatsIP</title>
+</head>
+<body>
+    <div class="container">
+       <div class="row">
+
+            <div class="col-4 offset-4">
+                <div class="card">
+                    <img class="card-img-top" src="/images/QR/qrcode.jpeg" alt="Card image cap">
+                    <article class="card-body">
+                        <h4 class="card-title text-center mb-4 mt-1">Login</h4>
+                        <hr>
+                        <form action="/login" method="POST">
+                        <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                             </div>
+                            <input name="nome_chat" class="form-control" placeholder="Nome" type="text">
+                        </div> <!-- input-group.// -->
+                        </div> <!-- form-group// -->
+                        
+                        <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-block"> Login  </button>
+                        </div> <!-- form-group// -->
+                        </form>
+                    </article>
+                    </div> <!-- card.// -->
+                    
+                        </aside> <!-- col.// -->
+                    </div> <!-- row.// -->
+            </div>
+            
+       </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
