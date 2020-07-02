@@ -19,10 +19,11 @@ module.exports = () => {
             $("div[class*='_9WQEN focusable-list-item']")
                 .nextAll('div[class*="message-in"]')
                 .each((i, element) => {
-                    let msg = $(element).find("span[class*='_3Whw5 selectable-text invisible-space copyable-text']").text()
+                    let rawMsg = $(element).find("span[class*='_3Whw5 selectable-text invisible-space copyable-text']").text();
+                    let msg = rawMsg.length > 0 ? rawMsg : '-MIDIA-'
                     console.log('Inserindo mensagem...')
                     console.log(`Contato: ${contactName}  Mensagem: ${msg}`);
-                    dbMessage.insertMessageDB(contactName, msg, origin='puppeteer')
+                    dbMessage.insertMessageDB(contactName, msg, origin='puppeteer');
                 });
         }catch(err){
             console.log('Um erro aconteceu em MessageScrapper.js', err);

@@ -32,16 +32,44 @@ module.exports = () => {
                     if (err) {
                         console.log('Um erro aconteceu no insert', err)
                     }
-                    else{
+                    else {
                         console.log('Insert realizado com sucesso!')
                     };
-                    
+
                 });
             });
-               
+
         } catch (err) {
             console.log('Um erro aconteceu em dbMessages', err)
         };
+    };
+
+    this.getHistoryMessage = (nameContact) => {
+        return new Promise((resolve, reject) => {
+            let query = `SELECT mensagem_recebida, mensagem, to_char(hora_mensagem, 'HH24:MI') FROM mensagens WHERE id_contato = '${nameContact}' ORDER BY id;`;
+            try {
+                db.connect((err, client, done) => {
+
+                    if (err) {
+                        console.log('Um erro aconteceu', err);
+                    };
+
+                    client.query(query, (err, result) => {
+                        done();
+                        if (err) {
+                            console.log('Um erro aconteceu no select', err);
+                        }
+                        else {
+                            console.log('Select executado com sucesso!');
+                            resolve(result.rows);
+                        };
+
+                    });
+                });
+            }catch(err){
+                console.log('Erro ao tentar conectar ao banco', err)
+            };
+        });
     };
 
     return this;

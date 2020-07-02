@@ -50,10 +50,9 @@
         const iniciar = confirm('Iniciar o Scrapper?')
         if(iniciar){
           socket.emit('handleContact')
-          // socket.emit('scrapping')
-          // setTimeout(()=>{
-          //   socket.emit('emit_mensagens')
-          // }, 3000);
+          setTimeout(()=>{
+            socket.emit('getMessages')
+          }, 3000);
         };
       });
 
@@ -141,7 +140,7 @@
             texto.removeClass('new_msg_preview')
           }
           if(nome_contato != '<empty string>'){
-            socket.emit('contato_historico', {'contato':nome_contato})
+            socket.emit('getHistory', {'contato':nome_contato})
           }
          RenderInputText()
          $('.write_msg').focus()
@@ -212,9 +211,9 @@
 
       function MontaHistoricoMensagens(iteravel){
         for(obj of iteravel){
-          let msg_status = obj['recebida']
+          let msg_status = obj['mensagem_recebida']
           let mensagem = obj['mensagem']
-          let horario = obj['hora_mensagem']
+          let horario = obj['to_char']
           if(msg_status == true){
             $('.msg_history').append(`
               <div class="incoming_msg">
@@ -246,9 +245,9 @@
       function MensagemDelivery(iteravel){
         for(obj of iteravel){
           let id_mensagem = obj['id']
-          let destino_msg = obj['contato']
+          let destino_msg = obj['id_contato']
           let mensagem = obj['mensagem']
-          let hora_msg = obj['hora_mensagem']
+          let hora_msg = obj['to_char']
           let retorno_contato_ativo = UpdateDivContatos(destino_msg, mensagem)
           if(retorno_contato_ativo){
               $('.msg_history').append(`
@@ -262,10 +261,10 @@
               </div>
               `)
               ScrollDown()
-              socket.emit('mensagem_update', {'id_msg':id_mensagem})
+              socket.emit('messageUpdate', {'id_msg':id_mensagem})
           }
           else{
-            socket.emit('mensagem_update', {'id_msg':id_mensagem})
+            socket.emit('messageUpdate', {'id_msg':id_mensagem})
           }
 
         }
@@ -276,16 +275,15 @@
         let dados = data
         if(dados['contactData']){
           let contato_dados = dados['contactData']
-          // console.log(contato_dados)
           MontaDivContatos(contato_dados)
         }
-        if(dados['historico_mensagem']){
-          let historico_msg = dados['historico_mensagem']
+        if(dados['historyMessages']){
+          let historico_msg = dados['historyMessages']
           MontaHistoricoMensagens(historico_msg)
           ScrollDown()
         }
-        if(dados['nova_mensagem']){
-          let nova_msg = dados['nova_mensagem']
+        if(dados['puppeteerMessages']){
+          let nova_msg = dados['puppeteerMessages']
           MensagemDelivery(nova_msg)
         }
 
