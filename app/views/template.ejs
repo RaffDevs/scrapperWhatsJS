@@ -94,18 +94,18 @@
  
 
       function ContatoOnTop(nome, mensagem){
-        $('div.active_chat').prependTo('.inbox_chat')
-        let tag_nome = $('.chat_list').find(`h5.name:contains(${nome})`)
-        let msg = tag_nome.siblings('p.msg-display')
+        $('div.active_chat').prependTo('.inbox_chat');
+        let tag_nome = $('.chat_list').find(`h5.name:contains(${nome})`);
+        let msg = tag_nome.siblings('p.msg-display');
         msg.html(mensagem)
       };
 
       function EscreveMsg(){
-        let contato = contato_ativo.contato_atual
+        let contato = contato_ativo.contato_atual;
         let texto = $('.write_msg').val();
         let autorMsg = autor;
         let mensagem = `${autorMsg}: ${texto}`;
-        let hora_agora = hora_atual()
+        let hora_agora = hora_atual();
         $('.msg_history').append(
               `
               <div class="outgoing_msg">
@@ -115,10 +115,11 @@
             </div>
             `)
         console.log('DEBUG', mensagem)
-        socket.emit('msg_enviada', {'contato':contato, 'mensagem':mensagem, 'hora_msg':hora_agora})
-        $('.write_msg').focus()
-        $('.write_msg').val('')
-        ContatoOnTop(contato, mensagem)
+        socket.emit('clientMessage', {'contato':contato, 'mensagem':mensagem, 'hora_msg':hora_agora});
+        $('.write_msg').focus();
+        $('.write_msg').val('');
+        ScrollDown();
+        ContatoOnTop(contato, mensagem);
         
       }
 
@@ -259,16 +260,16 @@
                     <span class="time_date">${hora_msg}</span></div>
                 </div>
               </div>
-              `)
+              `);
               ScrollDown()
-              socket.emit('messageUpdate', {'id_msg':id_mensagem})
+              socket.emit('messageUpdate', {'id_msg':id_mensagem});
           }
           else{
-            socket.emit('messageUpdate', {'id_msg':id_mensagem})
-          }
+            socket.emit('messageUpdate', {'id_msg':id_mensagem});
+          };
 
-        }
-      }
+        };
+      };
 
       
       socket.on('scraperJS', function(data){

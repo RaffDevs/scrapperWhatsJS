@@ -8,7 +8,7 @@ module.exports = async(page) =>{
             for(let link of readLinks){
                 await link.click();
             };
-            await sleep(1000)
+            await sleep(1000);
         };
     }catch(err){
         console.log('Erro no leia mais');

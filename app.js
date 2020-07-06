@@ -1,6 +1,6 @@
 const app = require('./config/server');
 const handleContact = require('./app/models/dbContacts')();
-const getMessageHistory = require('./app/models/dbMessages')();
+const dbMessages = require('./app/models/dbMessages')();
 const messageTrafic = require('./app/models/dbMessageTrafic')();
 
 
@@ -45,7 +45,7 @@ io.on('connection', (socket)=>{
     });
 
     socket.on('getHistory', (data)=>{
-        getMessageHistory.getHistoryMessage(data.contato)
+        dbMessages.getHistoryMessage(data.contato)
             .then((dados) =>{
                 socket.emit('scraperJS', {historyMessages: dados});
             });
@@ -56,6 +56,10 @@ io.on('connection', (socket)=>{
             .then(() => {
                 console.log('Mensagem atualizada com sucesso!');
             });
+    });
+
+    socket.on('clientMessage', (data) => {
+        dbMessages.insertMessageDB(data.contato, data.mensagem, origin='frontend');
     });
 
     socket.on('disconnect', ()=>{
