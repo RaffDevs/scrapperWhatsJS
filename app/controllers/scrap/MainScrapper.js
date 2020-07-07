@@ -3,6 +3,7 @@ const messageTraffic = require('../../models/dbMessageTrafic')();
 const MessageScrapper = require('./MessageScrapper')();
 const writeMessage = require('./msgWithContact');
 const sleep = require('../../src/Helpers/sleep');
+const logs = require('../../src/Helpers/logs');
 
 
 module.exports = async (page) => {
@@ -60,7 +61,7 @@ module.exports = async (page) => {
         }
         
     }catch(err){
-        console.log('Um erro aconteceu em MainScrapper', err);
+        logs(`Um erro aconteceu em MainScrapper:  ${err}`);
     };
     
 

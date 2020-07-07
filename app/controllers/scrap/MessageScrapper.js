@@ -1,7 +1,8 @@
 const cheerio = require('cheerio');
 const dbMessage = require('../../models/dbMessages')();
 const dbMessageTrafic = require('../../models/dbMessageTrafic')()
-const writeMessage = require('./msgWithoutContact')
+const writeMessage = require('./msgWithoutContact');
+const logs = require('../../src/Helpers/logs');
 
 module.exports = () => {
 
@@ -38,60 +39,63 @@ module.exports = () => {
                     };
                 });
         }catch(err){
-            console.log('Um erro aconteceu em MessageScrapper.js', err);
+            logs(`Um erro ocorreu em scrapNewMessages:  ${err}`);
         };
     };
 
     // Função responsável por fazer o scrapp da conversa ativa
     this.stillScrapping = async(page, html) => {
 
-        // Carrega o cheerio passando o html da conversa
-        let $ = cheerio.load(html);
+        try{
+            // Carrega o cheerio passando o html da conversa
+            let $ = cheerio.load(html);
 
-        let contactName = $("div[class='DP7CM']").text()
-        console.log('Entrei no contato: ', contactName);
+            let contactName = $("div[class='DP7CM']").text()
+            console.log('Entrei no contato: ', contactName);
 
-        dbMessageTrafic.getLastMessage(contactName)
-            .then((data)=> {
+            dbMessageTrafic.getLastMessage(contactName)
+                .then((data)=> {
 
-                let lastMessage = data[0].mensagem;
+                    let lastMessage = data[0].mensagem;
 
-                if(lastMessage !== undefined){
+                    if(lastMessage !== undefined){
 
-                    let divLastMessage = $(`span:contains('${lastMessage}')`);
+                        let divLastMessage = $(`span:contains('${lastMessage}')`);
 
-                    if(divLastMessage.html() !== null){
+                        if(divLastMessage.html() !== null){
 
-                        divLastMessage
-                        .last()
-                        .closest("div[class*='message-in']")
-                        .nextAll("div[class*='message-in']")
-                        .each((i, element) => {
-                            let msg = $(element).find("span[class*='_3Whw5 selectable-text invisible-space copyable-text']").text();
-                            console.log('Inserindo mensagem...');
-                            console.log(`Contato: ${contactName}  Mensagem: ${msg}`);
-                            dbMessage.insertMessageDB(contactName, msg, origin='puppeteer');
-                        });
-
+                            divLastMessage
+                            .last()
+                            .closest("div[class*='message-in']")
+                            .nextAll("div[class*='message-in']")
+                            .each((i, element) => {
+                                let msg = $(element).find("span[class*='_3Whw5 selectable-text invisible-space copyable-text']").text();
+                                console.log('Inserindo mensagem...');
+                                console.log(`Contato: ${contactName}  Mensagem: ${msg}`);
+                                dbMessage.insertMessageDB(contactName, msg, origin='puppeteer');
+                            });
+                        }
+                        else{
+                            console.log('Sem mensagens de: ', contactName);
+                        };   
+                    }; 
+                });
+            
+            dbMessageTrafic.messageToPuppeteer(nome=contactName)
+                .then(async(data) => {
+                    console.log('Verificando se há mensagens para o contato ', contactName)
+                    if(data.length > 0){
+                        await writeMessage(page, data)
                     }
                     else{
-                        console.log('Sem mensagens de: ', contactName);
+                        console.log('Sem mensagens para ', contactName)
                     };
-                        
-                };
-                
-            });
+                }); 
+        }catch(err){
+            logs(`Um erro ocorreu em stillScrapping:  ${err}`);
+        }
+
         
-        dbMessageTrafic.messageToPuppeteer(nome=contactName)
-            .then(async(data) => {
-                console.log('Verificando se há mensagens para o contato ', contactName)
-                if(data.length > 0){
-                    await writeMessage(page, data)
-                }
-                else{
-                    console.log('Sem mensagens para ', contactName)
-                };
-            }); 
 
 
     };

@@ -12,7 +12,7 @@ module.exports = (app) => {
 
         dbApi.insertApiMessage(contato, mensagem)
             .then((data) => {
-                return data;
+                res.send(data)
             });
 
 

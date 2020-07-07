@@ -2,6 +2,7 @@ const MessageScrapper = require('./MessageScrapper')();
 const scrollDivMessages = require('../../src/Helpers/renderAllConversation');
 const readMore = require('../../src/Helpers/readMore');
 const sleep = require('../../src/Helpers/sleep');
+const logs = require('../../src/Helpers/logs');
 
 module.exports = () => {
 
@@ -38,7 +39,7 @@ module.exports = () => {
                 };
                 
             } catch (err) {
-            console.log('Um erro aconteceu em ContactListener.js', err);
+            logs(`Um erro aconteceu na função newConversation:  ${err}`);
         };
 
     };
