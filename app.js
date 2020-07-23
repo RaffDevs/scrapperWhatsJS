@@ -72,7 +72,6 @@ io.on('connection', (socket)=>{
 
         await dbMessages.insert(data.contato, data.mensagem, origin='frontend');
 
-        // dbMessages.insertMessageDB(data.contato, data.mensagem, origin='frontend');
     });
 
 
