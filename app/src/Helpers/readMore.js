@@ -1,4 +1,5 @@
 const sleep = require('./sleep');
+const logs = require("./logs");
 
 module.exports = async(page) =>{
     try{
@@ -11,7 +12,7 @@ module.exports = async(page) =>{
             await sleep(1000);
         };
     }catch(err){
-        console.log('Erro no leia mais');
+        logs(`Ocorreu um erro em readMore: ${err}`);
     };
 };
     

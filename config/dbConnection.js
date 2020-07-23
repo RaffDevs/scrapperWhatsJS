@@ -1,26 +1,7 @@
-// const { Client } = require('pg');
-
-// module.exports = () => {
-//     return client = new
-//         Client({
-//             user: 'raffdevs',
-//             host: 'localhost',
-//             database: 'whats_forip',
-//             password: 'yma2578k',
-//             port: 5432
-//         });
-// };
+const pgp = require("pg-promise")();
+const connString = "postgresql://raffdevs:yma2578k@localhost:5432/whats_forip";
 
 
-const pg = require('pg');
+const db = pgp(connString);
 
-const config = {
-    user: 'raffdevs',
-    host: 'localhost',
-    database: 'whats_forip',
-    password: 'yma2578k',
-    port: 5432
-};
-module.exports = () =>{
-    return new pg.Pool(config);
-};
+module.exports = db;

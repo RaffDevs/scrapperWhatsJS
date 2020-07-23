@@ -41,20 +41,21 @@
     <script src="/socket.io/socket.io.js"></script>
     <script>
 
-      let socket = io('http://localhost:5000')
+      let socket = io('http://127.0.0.1:5000')
       let contatos_renderizados = []
       var contato_ativo = {contato_atual:''};
       const autor = pegaAutor();
 
       $(document).ready(()=>{
-        const iniciar = confirm('Iniciar o Scrapper?')
-        if(iniciar){
-          socket.emit('handleContact')
+        socket.emit('handleContact')
           setTimeout(()=>{
-            socket.emit('getMessages')
-          }, 3000);
-        };
+            socket.emit('pgNotify');
+          }, 2000);
       });
+
+      setInterval(() => {
+        socket.emit('getNewMessages')
+      }, 2000);
 
 
       function pegaAutor(){
@@ -248,7 +249,7 @@
           let id_mensagem = obj['id']
           let destino_msg = obj['id_contato']
           let mensagem = obj['mensagem']
-          let hora_msg = obj['to_char']
+          let hora_msg = obj['hora_mensagem']
           let retorno_contato_ativo = UpdateDivContatos(destino_msg, mensagem)
           if(retorno_contato_ativo){
               $('.msg_history').append(`
@@ -262,11 +263,7 @@
               </div>
               `);
               ScrollDown()
-              socket.emit('messageUpdate', {'id_msg':id_mensagem});
           }
-          else{
-            socket.emit('messageUpdate', {'id_msg':id_mensagem});
-          };
 
         };
       };
@@ -274,6 +271,7 @@
       
       socket.on('scraperJS', function(data){
         let dados = data
+
         if(dados['contactData']){
           let contato_dados = dados['contactData']
           MontaDivContatos(contato_dados)
@@ -290,6 +288,8 @@
 
       })
 
+
+  
     </script>
 
   </body>

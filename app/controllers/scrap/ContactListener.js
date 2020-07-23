@@ -11,7 +11,7 @@ module.exports = () => {
             
             // Busca por contatos que mandaram novas mensagens
             
-            console.log('Novos contatos mandaram mensagem!')
+            console.log('Novos contatos mandaram mensagem!');
             
                 for(let contato of arrayContatos){
 

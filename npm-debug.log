@@ -1,0 +1,2565 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'i', 'puppeteer' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData puppeteer@^4.0.0
+8 silly fetchNamedPackageData puppeteer
+9 silly mapToRegistry name puppeteer
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/puppeteer
+13 verbose request uri https://registry.npmjs.org/puppeteer
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 14:41:54
+16 verbose request id 0b0f8a3f4e4d6b6d
+17 verbose etag W/"2d4cfe309572fee4a0597f837ab053a6"
+18 verbose lastModified Fri, 17 Jul 2020 12:34:23 GMT
+19 http request GET https://registry.npmjs.org/puppeteer
+20 http 304 https://registry.npmjs.org/puppeteer
+21 verbose headers { date: 'Sat, 18 Jul 2020 17:41:54 GMT',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'set-cookie':
+21 verbose headers    [ '__cfduid=dc223a7ca6a40cbea347ba70f2e547dc81595094114; expires=Mon, 17-Aug-20 17:41:54 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+21 verbose headers   'cf-ray': '5b4dff06897cf3bf-GRU',
+21 verbose headers   age: '4237',
+21 verbose headers   'cache-control': 'public, max-age=300',
+21 verbose headers   etag: '"2d4cfe309572fee4a0597f837ab053a6"',
+21 verbose headers   'last-modified': 'Fri, 17 Jul 2020 12:34:23 GMT',
+21 verbose headers   vary: 'Accept-Encoding',
+21 verbose headers   'cf-cache-status': 'HIT',
+21 verbose headers   'cf-request-id': '04049db8130000f3bf0c00d200000001',
+21 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+21 verbose headers   server: 'cloudflare' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Sat, 18 Jul 2020 17:41:54 GMT',
+22 silly get     connection: 'keep-alive',
+22 silly get     'set-cookie':
+22 silly get      [ '__cfduid=dc223a7ca6a40cbea347ba70f2e547dc81595094114; expires=Mon, 17-Aug-20 17:41:54 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+22 silly get     'cf-ray': '5b4dff06897cf3bf-GRU',
+22 silly get     age: '4237',
+22 silly get     'cache-control': 'public, max-age=300',
+22 silly get     etag: '"2d4cfe309572fee4a0597f837ab053a6"',
+22 silly get     'last-modified': 'Fri, 17 Jul 2020 12:34:23 GMT',
+22 silly get     vary: 'Accept-Encoding',
+22 silly get     'cf-cache-status': 'HIT',
+22 silly get     'cf-request-id': '04049db8130000f3bf0c00d200000001',
+22 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 silly get     server: 'cloudflare' } ]
+23 verbose etag https://registry.npmjs.org/puppeteer from cache
+24 verbose get saving puppeteer to /home/raffdevs/.npm/registry.npmjs.org/puppeteer/.cache.json
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule puppeteer@4.0.1 checking installable status
+38 silly cache add args [ 'puppeteer@^4.0.0', null ]
+39 verbose cache add spec puppeteer@^4.0.0
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'puppeteer@^4.0.0',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'puppeteer',
+40 silly cache add   rawSpec: '^4.0.0',
+40 silly cache add   spec: '>=4.0.0 <5.0.0',
+40 silly cache add   type: 'range' }
+41 silly addNamed puppeteer@>=4.0.0 <5.0.0
+42 verbose addNamed ">=4.0.0 <5.0.0" is a valid semver range for puppeteer
+43 silly addNameRange { name: 'puppeteer', range: '>=4.0.0 <5.0.0', hasData: false }
+44 silly mapToRegistry name puppeteer
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/puppeteer
+48 verbose addNameRange registry:https://registry.npmjs.org/puppeteer not in flight; fetching
+49 verbose get https://registry.npmjs.org/puppeteer not expired, no request
+50 silly addNameRange number 2 { name: 'puppeteer', range: '>=4.0.0 <5.0.0', hasData: true }
+51 silly addNameRange versions [ 'puppeteer',
+51 silly addNameRange   [ '0.0.0',
+51 silly addNameRange     '0.9.0',
+51 silly addNameRange     '0.10.0',
+51 silly addNameRange     '0.10.1',
+51 silly addNameRange     '0.10.2',
+51 silly addNameRange     '0.11.0',
+51 silly addNameRange     '0.12.0',
+51 silly addNameRange     '0.13.0',
+51 silly addNameRange     '1.0.0-rc',
+51 silly addNameRange     '1.0.0-next.1514510476874',
+51 silly addNameRange     '1.0.0-next.1514951743425',
+51 silly addNameRange     '1.0.0-next.1515022965203',
+51 silly addNameRange     '1.0.0-next.1515032607003',
+51 silly addNameRange     '1.0.0-next.1515061835903',
+51 silly addNameRange     '1.0.0-next.1515092222354',
+51 silly addNameRange     '1.0.0-next.1515094434782',
+51 silly addNameRange     '1.0.0-next.1515095370840',
+51 silly addNameRange     '1.0.0-next.1515096688553',
+51 silly addNameRange     '1.0.0-next.1515102886297',
+51 silly addNameRange     '1.0.0-next.1515107202232',
+51 silly addNameRange     '1.0.0-next.1515176243781',
+51 silly addNameRange     '1.0.0-next.1515449879873',
+51 silly addNameRange     '1.0.0-next.1515453229229',
+51 silly addNameRange     '1.0.0-next.1515460930569',
+51 silly addNameRange     '1.0.0-next.1515463858907',
+51 silly addNameRange     '1.0.0-next.1515463970965',
+51 silly addNameRange     '1.0.0-next.1515544418139',
+51 silly addNameRange     '1.0.0-next.1515546200351',
+51 silly addNameRange     '1.0.0-next.1515552562439',
+51 silly addNameRange     '1.0.0-next.1515563875372',
+51 silly addNameRange     '1.0.0-next.1515567769425',
+51 silly addNameRange     '1.0.0-next.1515568144024',
+51 silly addNameRange     '1.0.0-next.1515618391320',
+51 silly addNameRange     '1.0.0-next.1515641713768',
+51 silly addNameRange     '1.0.0-next.1515659454855',
+51 silly addNameRange     '1.0.0-next.1515702182453',
+51 silly addNameRange     '1.0.0-next.1515707096515',
+51 silly addNameRange     '1.0.0-next.1515712659552',
+51 silly addNameRange     '1.0.0',
+51 silly addNameRange     '1.0.0-next.1515733912424',
+51 silly addNameRange     '1.0.0-next.1515745145135',
+51 silly addNameRange     '1.0.0-next.1515786200433',
+51 silly addNameRange     '1.0.0-next.1516189923095',
+51 silly addNameRange     '1.0.0-next.1516255441715',
+51 silly addNameRange     '1.0.0-next.1516339380944',
+51 silly addNameRange     '1.0.0-next.1516339397474',
+51 silly addNameRange     '1.0.0-next.1516340514293',
+51 silly addNameRange     '1.0.0-next.1516351540753',
+51 silly addNameRange     '1.0.0-next.1516663116955',
+51 silly addNameRange     '1.0.0-next.1516666407998',
+51 silly addNameRange     '1.0.0-next.1516668517979',
+51 silly addNameRange     '1.0.0-next.1516669982697',
+51 silly addNameRange     '1.0.0-next.1516857257758',
+51 silly addNameRange     '1.0.0-next.1516857487583',
+51 silly addNameRange     '1.0.0-next.1516920787679',
+51 silly addNameRange     '1.0.0-next.1517036516784',
+51 silly addNameRange     '1.0.0-next.1517354775230',
+51 silly addNameRange     '1.0.0-next.1517441618294',
+51 silly addNameRange     '1.0.0-next.1517443479601',
+51 silly addNameRange     '1.0.0-next.1517859708863',
+51 silly addNameRange     '1.0.0-next.1517864102118',
+51 silly addNameRange     '1.0.0-next.1517870791213',
+51 silly addNameRange     '1.0.0-next.1517871038246',
+51 silly addNameRange     '1.0.0-next.1517871611925',
+51 silly addNameRange     '1.0.0-next.1517871854711',
+51 silly addNameRange     '1.0.0-next.1517875514795',
+51 silly addNameRange     '1.0.0-next.1518024831019',
+51 silly addNameRange     '1.0.0-next.1518042185396',
+51 silly addNameRange     '1.0.0-next.1518044651367',
+51 silly addNameRange     '1.0.0-next.1518069662486',
+51 silly addNameRange     '1.0.0-next.1518069677340',
+51 silly addNameRange     '1.0.0-next.1518148905595',
+51 silly addNameRange     '1.0.0-next.1518485242743',
+51 silly addNameRange     '1.0.0-next.1518548577113',
+51 silly addNameRange     '1.0.0-next.1518550112236',
+51 silly addNameRange     '1.0.0-next.1518558601182',
+51 silly addNameRange     '1.0.0-next.1518559525177',
+51 silly addNameRange     '1.0.0-next.1518561730306',
+51 silly addNameRange     '1.0.0-next.1518570822451',
+51 silly addNameRange     '1.0.0-next.1518653466440',
+51 silly addNameRange     '1.0.0-next.1518655197185',
+51 silly addNameRange     '1.0.0-next.1518659629421',
+51 silly addNameRange     '1.0.0-next.1518730236759',
+51 silly addNameRange     '1.1.0',
+51 silly addNameRange     '1.1.0-next.1518809287189',
+51 silly addNameRange     '1.1.0-next.1519262100584',
+51 silly addNameRange     '1.1.0-next.1519266285104',
+51 silly addNameRange     '1.1.0-next.1519345518390',
+51 silly addNameRange     '1.1.0-next.1519350670048',
+51 silly addNameRange     '1.1.0-next.1519355295259',
+51 silly addNameRange     '1.1.0-next.1519355543971',
+51 silly addNameRange     '1.1.0-next.1519424108630',
+51 silly addNameRange     '1.1.0-next.1519430203926',
+51 silly addNameRange     '1.1.0-next.1519449884398',
+51 silly addNameRange     '1.1.1-next.1519451217463',
+51 silly addNameRange     '1.1.1',
+51 silly addNameRange     '1.1.1-next.1519455879191',
+51 silly addNameRange     '1.1.1-next.1519675964105',
+51 silly addNameRange     '1.1.1-next.1520401889860',
+51 silly addNameRange     '1.1.1-next.1520401938885',
+51 silly addNameRange     ... 592 more items ] ]
+52 silly addNamed puppeteer@4.0.1
+53 verbose addNamed "4.0.1" is a plain semver version for puppeteer
+54 silly mapToRegistry name puppeteer
+55 silly mapToRegistry using default registry
+56 silly mapToRegistry registry https://registry.npmjs.org/
+57 silly mapToRegistry uri https://registry.npmjs.org/puppeteer
+58 verbose addRemoteTarball https://registry.npmjs.org/puppeteer/-/puppeteer-4.0.1.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'https://registry.npmjs.org/puppeteer/-/puppeteer-4.0.1.tgz',
+59 verbose addRemoteTarball   'ebc2ee61157ed1aa25be3843fda97807df1d51f5' ]
+60 info retry fetch attempt 1 at 14:41:54
+61 info attempt registry request try #1 at 14:41:54
+62 http fetch GET https://registry.npmjs.org/puppeteer/-/puppeteer-4.0.1.tgz
+63 http fetch 200 https://registry.npmjs.org/puppeteer/-/puppeteer-4.0.1.tgz
+64 silly fetchAndShaCheck shasum ebc2ee61157ed1aa25be3843fda97807df1d51f5
+65 verbose addTmpTarball /tmp/npm-27100-aec96dc2/registry.npmjs.org/puppeteer/-/puppeteer-4.0.1.tgz not in flight; adding
+66 verbose addTmpTarball already have metadata; skipping unpack for puppeteer@4.0.1
+67 silly cache afterAdd puppeteer@4.0.1
+68 verbose afterAdd /home/raffdevs/.npm/puppeteer/4.0.1/package/package.json not in flight; writing
+69 verbose afterAdd /home/raffdevs/.npm/puppeteer/4.0.1/package/package.json written
+70 silly fetchNamedPackageData debug
+71 silly mapToRegistry name debug
+72 silly mapToRegistry using default registry
+73 silly mapToRegistry registry https://registry.npmjs.org/
+74 silly mapToRegistry uri https://registry.npmjs.org/debug
+75 silly fetchNamedPackageData mime
+76 silly mapToRegistry name mime
+77 silly mapToRegistry using default registry
+78 silly mapToRegistry registry https://registry.npmjs.org/
+79 silly mapToRegistry uri https://registry.npmjs.org/mime
+80 verbose request uri https://registry.npmjs.org/debug
+81 verbose request no auth needed
+82 info attempt registry request try #1 at 14:41:55
+83 http request GET https://registry.npmjs.org/debug
+84 verbose request uri https://registry.npmjs.org/mime
+85 verbose request no auth needed
+86 info attempt registry request try #1 at 14:41:55
+87 http request GET https://registry.npmjs.org/mime
+88 http 200 https://registry.npmjs.org/debug
+89 verbose headers { date: 'Sat, 18 Jul 2020 17:41:55 GMT',
+89 verbose headers   'content-type': 'application/json',
+89 verbose headers   'transfer-encoding': 'chunked',
+89 verbose headers   connection: 'keep-alive',
+89 verbose headers   'set-cookie':
+89 verbose headers    [ '__cfduid=dda071cd4e8bd2c85a3382b0c840346671595094115; expires=Mon, 17-Aug-20 17:41:55 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+89 verbose headers   'cf-ray': '5b4dff0b98e2f3bf-GRU',
+89 verbose headers   age: '3276',
+89 verbose headers   'cache-control': 'public, max-age=300',
+89 verbose headers   etag: 'W/"682ba37cc9406956ab0280ea33284028"',
+89 verbose headers   'last-modified': 'Tue, 19 May 2020 09:51:31 GMT',
+89 verbose headers   vary: 'accept-encoding, accept',
+89 verbose headers   'cf-cache-status': 'HIT',
+89 verbose headers   'cf-request-id': '04049dbb3e0000f3bf0c03f200000001',
+89 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+89 verbose headers   server: 'cloudflare',
+89 verbose headers   'content-encoding': 'gzip' }
+90 silly get cb [ 200,
+90 silly get   { date: 'Sat, 18 Jul 2020 17:41:55 GMT',
+90 silly get     'content-type': 'application/json',
+90 silly get     'transfer-encoding': 'chunked',
+90 silly get     connection: 'keep-alive',
+90 silly get     'set-cookie':
+90 silly get      [ '__cfduid=dda071cd4e8bd2c85a3382b0c840346671595094115; expires=Mon, 17-Aug-20 17:41:55 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+90 silly get     'cf-ray': '5b4dff0b98e2f3bf-GRU',
+90 silly get     age: '3276',
+90 silly get     'cache-control': 'public, max-age=300',
+90 silly get     etag: 'W/"682ba37cc9406956ab0280ea33284028"',
+90 silly get     'last-modified': 'Tue, 19 May 2020 09:51:31 GMT',
+90 silly get     vary: 'accept-encoding, accept',
+90 silly get     'cf-cache-status': 'HIT',
+90 silly get     'cf-request-id': '04049dbb3e0000f3bf0c03f200000001',
+90 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+90 silly get     server: 'cloudflare',
+90 silly get     'content-encoding': 'gzip' } ]
+91 verbose get saving debug to /home/raffdevs/.npm/registry.npmjs.org/debug/.cache.json
+92 silly resolveWithNewModule debug@4.1.1 checking installable status
+93 silly cache add args [ 'debug@^4.1.0', null ]
+94 verbose cache add spec debug@^4.1.0
+95 silly cache add parsed spec Result {
+95 silly cache add   raw: 'debug@^4.1.0',
+95 silly cache add   scope: null,
+95 silly cache add   name: 'debug',
+95 silly cache add   rawSpec: '^4.1.0',
+95 silly cache add   spec: '>=4.1.0 <5.0.0',
+95 silly cache add   type: 'range' }
+96 silly addNamed debug@>=4.1.0 <5.0.0
+97 verbose addNamed ">=4.1.0 <5.0.0" is a valid semver range for debug
+98 silly addNameRange { name: 'debug', range: '>=4.1.0 <5.0.0', hasData: false }
+99 silly mapToRegistry name debug
+100 silly mapToRegistry using default registry
+101 silly mapToRegistry registry https://registry.npmjs.org/
+102 silly mapToRegistry uri https://registry.npmjs.org/debug
+103 verbose addNameRange registry:https://registry.npmjs.org/debug not in flight; fetching
+104 verbose get https://registry.npmjs.org/debug not expired, no request
+105 silly addNameRange number 2 { name: 'debug', range: '>=4.1.0 <5.0.0', hasData: true }
+106 silly addNameRange versions [ 'debug',
+106 silly addNameRange   [ '0.0.1',
+106 silly addNameRange     '0.1.0',
+106 silly addNameRange     '0.2.0',
+106 silly addNameRange     '0.3.0',
+106 silly addNameRange     '0.4.0',
+106 silly addNameRange     '0.4.1',
+106 silly addNameRange     '0.5.0',
+106 silly addNameRange     '0.6.0',
+106 silly addNameRange     '0.7.0',
+106 silly addNameRange     '0.7.1',
+106 silly addNameRange     '0.7.2',
+106 silly addNameRange     '0.7.3',
+106 silly addNameRange     '0.7.4',
+106 silly addNameRange     '0.8.0',
+106 silly addNameRange     '0.8.1',
+106 silly addNameRange     '1.0.0',
+106 silly addNameRange     '1.0.1',
+106 silly addNameRange     '1.0.2',
+106 silly addNameRange     '1.0.3',
+106 silly addNameRange     '1.0.4',
+106 silly addNameRange     '2.0.0',
+106 silly addNameRange     '2.1.0',
+106 silly addNameRange     '2.1.1',
+106 silly addNameRange     '2.1.2',
+106 silly addNameRange     '2.1.3',
+106 silly addNameRange     '2.2.0',
+106 silly addNameRange     '2.3.0',
+106 silly addNameRange     '2.3.1',
+106 silly addNameRange     '2.3.2',
+106 silly addNameRange     '2.3.3',
+106 silly addNameRange     '2.4.0',
+106 silly addNameRange     '2.4.1',
+106 silly addNameRange     '2.4.2',
+106 silly addNameRange     '2.4.3',
+106 silly addNameRange     '2.4.4',
+106 silly addNameRange     '2.4.5',
+106 silly addNameRange     '2.5.0',
+106 silly addNameRange     '2.5.1',
+106 silly addNameRange     '2.5.2',
+106 silly addNameRange     '2.6.0',
+106 silly addNameRange     '2.6.1',
+106 silly addNameRange     '2.6.2',
+106 silly addNameRange     '2.6.3',
+106 silly addNameRange     '2.6.4',
+106 silly addNameRange     '2.6.5',
+106 silly addNameRange     '2.6.6',
+106 silly addNameRange     '2.6.7',
+106 silly addNameRange     '2.6.8',
+106 silly addNameRange     '1.0.5',
+106 silly addNameRange     '3.0.0',
+106 silly addNameRange     '3.0.1',
+106 silly addNameRange     '2.6.9',
+106 silly addNameRange     '3.1.0',
+106 silly addNameRange     '3.2.0',
+106 silly addNameRange     '3.2.1',
+106 silly addNameRange     '3.2.2',
+106 silly addNameRange     '3.2.3',
+106 silly addNameRange     '4.0.0',
+106 silly addNameRange     '3.2.4',
+106 silly addNameRange     '3.2.5',
+106 silly addNameRange     '4.0.1',
+106 silly addNameRange     '4.1.0',
+106 silly addNameRange     '3.2.6',
+106 silly addNameRange     '4.1.1',
+106 silly addNameRange     '4.2.0' ] ]
+107 silly addNamed debug@4.1.1
+108 verbose addNamed "4.1.1" is a plain semver version for debug
+109 silly mapToRegistry name debug
+110 silly mapToRegistry using default registry
+111 silly mapToRegistry registry https://registry.npmjs.org/
+112 silly mapToRegistry uri https://registry.npmjs.org/debug
+113 verbose addRemoteTarball https://registry.npmjs.org/debug/-/debug-4.1.1.tgz not in flight; adding
+114 verbose addRemoteTarball [ 'https://registry.npmjs.org/debug/-/debug-4.1.1.tgz',
+114 verbose addRemoteTarball   '3b72260255109c6b589cee050f1d516139664791' ]
+115 info retry fetch attempt 1 at 14:41:55
+116 info attempt registry request try #1 at 14:41:55
+117 http fetch GET https://registry.npmjs.org/debug/-/debug-4.1.1.tgz
+118 http fetch 200 https://registry.npmjs.org/debug/-/debug-4.1.1.tgz
+119 silly fetchAndShaCheck shasum 3b72260255109c6b589cee050f1d516139664791
+120 verbose addTmpTarball /tmp/npm-27100-aec96dc2/registry.npmjs.org/debug/-/debug-4.1.1.tgz not in flight; adding
+121 verbose addTmpTarball already have metadata; skipping unpack for debug@4.1.1
+122 silly cache afterAdd debug@4.1.1
+123 verbose afterAdd /home/raffdevs/.npm/debug/4.1.1/package/package.json not in flight; writing
+124 verbose afterAdd /home/raffdevs/.npm/debug/4.1.1/package/package.json written
+125 http 200 https://registry.npmjs.org/mime
+126 verbose headers { date: 'Sat, 18 Jul 2020 17:41:56 GMT',
+126 verbose headers   'content-type': 'application/json',
+126 verbose headers   'transfer-encoding': 'chunked',
+126 verbose headers   connection: 'keep-alive',
+126 verbose headers   'set-cookie':
+126 verbose headers    [ '__cfduid=d007b05b6fd93934288c4c1a641753a131595094115; expires=Mon, 17-Aug-20 17:41:55 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+126 verbose headers   'cf-ray': '5b4dff0bec7beebe-GRU',
+126 verbose headers   'cache-control': 'public, max-age=300',
+126 verbose headers   etag: 'W/"1dfad561148856b67d3e9802658b1f31"',
+126 verbose headers   'last-modified': 'Wed, 27 May 2020 16:23:43 GMT',
+126 verbose headers   vary: 'accept-encoding, accept',
+126 verbose headers   'cf-cache-status': 'EXPIRED',
+126 verbose headers   'cf-request-id': '04049dbb740000eebe8a8c5200000001',
+126 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+126 verbose headers   server: 'cloudflare',
+126 verbose headers   'content-encoding': 'gzip' }
+127 silly get cb [ 200,
+127 silly get   { date: 'Sat, 18 Jul 2020 17:41:56 GMT',
+127 silly get     'content-type': 'application/json',
+127 silly get     'transfer-encoding': 'chunked',
+127 silly get     connection: 'keep-alive',
+127 silly get     'set-cookie':
+127 silly get      [ '__cfduid=d007b05b6fd93934288c4c1a641753a131595094115; expires=Mon, 17-Aug-20 17:41:55 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+127 silly get     'cf-ray': '5b4dff0bec7beebe-GRU',
+127 silly get     'cache-control': 'public, max-age=300',
+127 silly get     etag: 'W/"1dfad561148856b67d3e9802658b1f31"',
+127 silly get     'last-modified': 'Wed, 27 May 2020 16:23:43 GMT',
+127 silly get     vary: 'accept-encoding, accept',
+127 silly get     'cf-cache-status': 'EXPIRED',
+127 silly get     'cf-request-id': '04049dbb740000eebe8a8c5200000001',
+127 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+127 silly get     server: 'cloudflare',
+127 silly get     'content-encoding': 'gzip' } ]
+128 verbose get saving mime to /home/raffdevs/.npm/registry.npmjs.org/mime/.cache.json
+129 silly resolveWithNewModule mime@2.4.6 checking installable status
+130 silly cache add args [ 'mime@^2.0.3', null ]
+131 verbose cache add spec mime@^2.0.3
+132 silly cache add parsed spec Result {
+132 silly cache add   raw: 'mime@^2.0.3',
+132 silly cache add   scope: null,
+132 silly cache add   name: 'mime',
+132 silly cache add   rawSpec: '^2.0.3',
+132 silly cache add   spec: '>=2.0.3 <3.0.0',
+132 silly cache add   type: 'range' }
+133 silly addNamed mime@>=2.0.3 <3.0.0
+134 verbose addNamed ">=2.0.3 <3.0.0" is a valid semver range for mime
+135 silly addNameRange { name: 'mime', range: '>=2.0.3 <3.0.0', hasData: false }
+136 silly mapToRegistry name mime
+137 silly mapToRegistry using default registry
+138 silly mapToRegistry registry https://registry.npmjs.org/
+139 silly mapToRegistry uri https://registry.npmjs.org/mime
+140 verbose addNameRange registry:https://registry.npmjs.org/mime not in flight; fetching
+141 verbose get https://registry.npmjs.org/mime not expired, no request
+142 silly addNameRange number 2 { name: 'mime', range: '>=2.0.3 <3.0.0', hasData: true }
+143 silly addNameRange versions [ 'mime',
+143 silly addNameRange   [ '1.0.0',
+143 silly addNameRange     '1.1.0',
+143 silly addNameRange     '1.2.1',
+143 silly addNameRange     '1.2.2',
+143 silly addNameRange     '1.2.3',
+143 silly addNameRange     '1.2.4',
+143 silly addNameRange     '1.2.5',
+143 silly addNameRange     '1.2.6',
+143 silly addNameRange     '1.2.7',
+143 silly addNameRange     '1.2.8',
+143 silly addNameRange     '1.2.9',
+143 silly addNameRange     '1.2.10',
+143 silly addNameRange     '1.2.11',
+143 silly addNameRange     '1.3.0',
+143 silly addNameRange     '1.3.2',
+143 silly addNameRange     '1.3.3',
+143 silly addNameRange     '1.3.4',
+143 silly addNameRange     '1.3.5',
+143 silly addNameRange     '1.3.6',
+143 silly addNameRange     '1.4.0',
+143 silly addNameRange     '2.0.0',
+143 silly addNameRange     '2.0.1',
+143 silly addNameRange     '2.0.2',
+143 silly addNameRange     '1.4.1',
+143 silly addNameRange     '2.0.3',
+143 silly addNameRange     '1.5.0',
+143 silly addNameRange     '1.6.0',
+143 silly addNameRange     '2.0.5',
+143 silly addNameRange     '2.1.0',
+143 silly addNameRange     '2.2.0',
+143 silly addNameRange     '2.2.1',
+143 silly addNameRange     '2.2.2',
+143 silly addNameRange     '2.3.0',
+143 silly addNameRange     '2.3.1',
+143 silly addNameRange     '2.4.0',
+143 silly addNameRange     '2.4.1',
+143 silly addNameRange     '2.4.2',
+143 silly addNameRange     '2.4.3',
+143 silly addNameRange     '2.4.4',
+143 silly addNameRange     '2.4.5',
+143 silly addNameRange     '2.4.6' ] ]
+144 silly addNamed mime@2.4.6
+145 verbose addNamed "2.4.6" is a plain semver version for mime
+146 silly mapToRegistry name mime
+147 silly mapToRegistry using default registry
+148 silly mapToRegistry registry https://registry.npmjs.org/
+149 silly mapToRegistry uri https://registry.npmjs.org/mime
+150 verbose addRemoteTarball https://registry.npmjs.org/mime/-/mime-2.4.6.tgz not in flight; adding
+151 verbose addRemoteTarball [ 'https://registry.npmjs.org/mime/-/mime-2.4.6.tgz',
+151 verbose addRemoteTarball   'e5b407c90db442f2beb5b162373d07b69affa4d1' ]
+152 info retry fetch attempt 1 at 14:41:56
+153 info attempt registry request try #1 at 14:41:56
+154 http fetch GET https://registry.npmjs.org/mime/-/mime-2.4.6.tgz
+155 http fetch 200 https://registry.npmjs.org/mime/-/mime-2.4.6.tgz
+156 silly fetchAndShaCheck shasum e5b407c90db442f2beb5b162373d07b69affa4d1
+157 verbose addTmpTarball /tmp/npm-27100-aec96dc2/registry.npmjs.org/mime/-/mime-2.4.6.tgz not in flight; adding
+158 verbose addTmpTarball already have metadata; skipping unpack for mime@2.4.6
+159 silly cache afterAdd mime@2.4.6
+160 verbose afterAdd /home/raffdevs/.npm/mime/2.4.6/package/package.json not in flight; writing
+161 verbose afterAdd /home/raffdevs/.npm/mime/2.4.6/package/package.json written
+162 silly fetchNamedPackageData ms
+163 silly mapToRegistry name ms
+164 silly mapToRegistry using default registry
+165 silly mapToRegistry registry https://registry.npmjs.org/
+166 silly mapToRegistry uri https://registry.npmjs.org/ms
+167 verbose request uri https://registry.npmjs.org/ms
+168 verbose request no auth needed
+169 info attempt registry request try #1 at 14:41:56
+170 http request GET https://registry.npmjs.org/ms
+171 http 200 https://registry.npmjs.org/ms
+172 verbose headers { date: 'Sat, 18 Jul 2020 17:41:56 GMT',
+172 verbose headers   'content-type': 'application/json',
+172 verbose headers   'transfer-encoding': 'chunked',
+172 verbose headers   connection: 'keep-alive',
+172 verbose headers   'set-cookie':
+172 verbose headers    [ '__cfduid=dc52cd6690b4209480a351ecee27d490f1595094116; expires=Mon, 17-Aug-20 17:41:56 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+172 verbose headers   'cf-ray': '5b4dff14c9cfeebe-GRU',
+172 verbose headers   age: '2851',
+172 verbose headers   'cache-control': 'public, max-age=300',
+172 verbose headers   etag: 'W/"7e83bbd7a4d19b531db5e309502b23ba"',
+172 verbose headers   'last-modified': 'Wed, 15 Jul 2020 19:27:43 GMT',
+172 verbose headers   vary: 'accept-encoding, accept',
+172 verbose headers   'cf-cache-status': 'HIT',
+172 verbose headers   'cf-request-id': '04049dc1000000eebe8a90e200000001',
+172 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+172 verbose headers   server: 'cloudflare',
+172 verbose headers   'content-encoding': 'gzip' }
+173 silly get cb [ 200,
+173 silly get   { date: 'Sat, 18 Jul 2020 17:41:56 GMT',
+173 silly get     'content-type': 'application/json',
+173 silly get     'transfer-encoding': 'chunked',
+173 silly get     connection: 'keep-alive',
+173 silly get     'set-cookie':
+173 silly get      [ '__cfduid=dc52cd6690b4209480a351ecee27d490f1595094116; expires=Mon, 17-Aug-20 17:41:56 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+173 silly get     'cf-ray': '5b4dff14c9cfeebe-GRU',
+173 silly get     age: '2851',
+173 silly get     'cache-control': 'public, max-age=300',
+173 silly get     etag: 'W/"7e83bbd7a4d19b531db5e309502b23ba"',
+173 silly get     'last-modified': 'Wed, 15 Jul 2020 19:27:43 GMT',
+173 silly get     vary: 'accept-encoding, accept',
+173 silly get     'cf-cache-status': 'HIT',
+173 silly get     'cf-request-id': '04049dc1000000eebe8a90e200000001',
+173 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+173 silly get     server: 'cloudflare',
+173 silly get     'content-encoding': 'gzip' } ]
+174 verbose get saving ms to /home/raffdevs/.npm/registry.npmjs.org/ms/.cache.json
+175 silly resolveWithNewModule ms@2.1.2 checking installable status
+176 silly cache add args [ 'ms@^2.1.1', null ]
+177 verbose cache add spec ms@^2.1.1
+178 silly cache add parsed spec Result {
+178 silly cache add   raw: 'ms@^2.1.1',
+178 silly cache add   scope: null,
+178 silly cache add   name: 'ms',
+178 silly cache add   rawSpec: '^2.1.1',
+178 silly cache add   spec: '>=2.1.1 <3.0.0',
+178 silly cache add   type: 'range' }
+179 silly addNamed ms@>=2.1.1 <3.0.0
+180 verbose addNamed ">=2.1.1 <3.0.0" is a valid semver range for ms
+181 silly addNameRange { name: 'ms', range: '>=2.1.1 <3.0.0', hasData: false }
+182 silly mapToRegistry name ms
+183 silly mapToRegistry using default registry
+184 silly mapToRegistry registry https://registry.npmjs.org/
+185 silly mapToRegistry uri https://registry.npmjs.org/ms
+186 verbose addNameRange registry:https://registry.npmjs.org/ms not in flight; fetching
+187 verbose get https://registry.npmjs.org/ms not expired, no request
+188 silly addNameRange number 2 { name: 'ms', range: '>=2.1.1 <3.0.0', hasData: true }
+189 silly addNameRange versions [ 'ms',
+189 silly addNameRange   [ '0.1.0',
+189 silly addNameRange     '0.2.0',
+189 silly addNameRange     '0.3.0',
+189 silly addNameRange     '0.4.0',
+189 silly addNameRange     '0.5.0',
+189 silly addNameRange     '0.5.1',
+189 silly addNameRange     '0.6.0',
+189 silly addNameRange     '0.6.1',
+189 silly addNameRange     '0.6.2',
+189 silly addNameRange     '0.7.0',
+189 silly addNameRange     '0.7.1',
+189 silly addNameRange     '0.7.2',
+189 silly addNameRange     '0.7.3',
+189 silly addNameRange     '1.0.0',
+189 silly addNameRange     '2.0.0',
+189 silly addNameRange     '2.1.0',
+189 silly addNameRange     '2.1.1',
+189 silly addNameRange     '2.1.2' ] ]
+190 silly addNamed ms@2.1.2
+191 verbose addNamed "2.1.2" is a plain semver version for ms
+192 silly mapToRegistry name ms
+193 silly mapToRegistry using default registry
+194 silly mapToRegistry registry https://registry.npmjs.org/
+195 silly mapToRegistry uri https://registry.npmjs.org/ms
+196 verbose addRemoteTarball https://registry.npmjs.org/ms/-/ms-2.1.2.tgz not in flight; adding
+197 verbose addRemoteTarball [ 'https://registry.npmjs.org/ms/-/ms-2.1.2.tgz',
+197 verbose addRemoteTarball   'd09d1f357b443f493382a8eb3ccd183872ae6009' ]
+198 info retry fetch attempt 1 at 14:41:56
+199 info attempt registry request try #1 at 14:41:56
+200 http fetch GET https://registry.npmjs.org/ms/-/ms-2.1.2.tgz
+201 http fetch 200 https://registry.npmjs.org/ms/-/ms-2.1.2.tgz
+202 silly fetchAndShaCheck shasum d09d1f357b443f493382a8eb3ccd183872ae6009
+203 verbose addTmpTarball /tmp/npm-27100-aec96dc2/registry.npmjs.org/ms/-/ms-2.1.2.tgz not in flight; adding
+204 verbose addTmpTarball already have metadata; skipping unpack for ms@2.1.2
+205 silly cache afterAdd ms@2.1.2
+206 verbose afterAdd /home/raffdevs/.npm/ms/2.1.2/package/package.json not in flight; writing
+207 verbose afterAdd /home/raffdevs/.npm/ms/2.1.2/package/package.json written
+208 silly loadAllDepsIntoIdealTree Finishing
+209 silly idealTree:prePrune chat_forip_js@1.0.0
+209 silly idealTree:prePrune ├── @types/node@14.0.13
+209 silly idealTree:prePrune ├── @types/yauzl@2.9.1
+209 silly idealTree:prePrune ├── accepts@1.3.7
+209 silly idealTree:prePrune ├── after@0.8.2
+209 silly idealTree:prePrune ├── agent-base@5.1.1
+209 silly idealTree:prePrune ├── ansi-styles@3.2.1
+209 silly idealTree:prePrune ├── array-flatten@1.1.1
+209 silly idealTree:prePrune ├── arraybuffer.slice@0.0.7
+209 silly idealTree:prePrune ├── async-limiter@1.0.1
+209 silly idealTree:prePrune ├── async@0.9.2
+209 silly idealTree:prePrune ├── backo2@1.0.2
+209 silly idealTree:prePrune ├── balanced-match@1.0.0
+209 silly idealTree:prePrune ├── base64-arraybuffer@0.1.5
+209 silly idealTree:prePrune ├── base64-js@1.3.1
+209 silly idealTree:prePrune ├── base64id@2.0.0
+209 silly idealTree:prePrune ├── better-assert@1.0.2
+209 silly idealTree:prePrune ├─┬ bl@4.0.2
+209 silly idealTree:prePrune │ └── inherits@2.0.4
+209 silly idealTree:prePrune ├── blob@0.0.5
+209 silly idealTree:prePrune ├── body-parser@1.19.0
+209 silly idealTree:prePrune ├── boolbase@1.0.0
+209 silly idealTree:prePrune ├── brace-expansion@1.1.11
+209 silly idealTree:prePrune ├── buffer-crc32@0.2.13
+209 silly idealTree:prePrune ├── buffer-writer@2.0.0
+209 silly idealTree:prePrune ├── buffer@5.6.0
+209 silly idealTree:prePrune ├── bytes@3.1.0
+209 silly idealTree:prePrune ├── callsite@1.0.0
+209 silly idealTree:prePrune ├── chalk@2.4.2
+209 silly idealTree:prePrune ├── cheerio@1.0.0-rc.3
+209 silly idealTree:prePrune ├── chownr@1.1.4
+209 silly idealTree:prePrune ├── color-convert@1.9.3
+209 silly idealTree:prePrune ├── color-name@1.1.3
+209 silly idealTree:prePrune ├── component-bind@1.0.0
+209 silly idealTree:prePrune ├── component-emitter@1.2.1
+209 silly idealTree:prePrune ├── component-inherit@0.0.3
+209 silly idealTree:prePrune ├── concat-map@0.0.1
+209 silly idealTree:prePrune ├── consign@0.1.6
+209 silly idealTree:prePrune ├── content-disposition@0.5.3
+209 silly idealTree:prePrune ├── content-type@1.0.4
+209 silly idealTree:prePrune ├── cookie-signature@1.0.6
+209 silly idealTree:prePrune ├── cookie@0.4.0
+209 silly idealTree:prePrune ├── css-select@1.2.0
+209 silly idealTree:prePrune ├── css-what@2.1.3
+209 silly idealTree:prePrune ├── debug@2.6.9
+209 silly idealTree:prePrune ├── depd@1.1.2
+209 silly idealTree:prePrune ├── destroy@1.0.4
+209 silly idealTree:prePrune ├── dom-serializer@0.1.1
+209 silly idealTree:prePrune ├── domelementtype@1.3.1
+209 silly idealTree:prePrune ├── domhandler@2.4.2
+209 silly idealTree:prePrune ├── domutils@1.5.1
+209 silly idealTree:prePrune ├── ee-first@1.1.1
+209 silly idealTree:prePrune ├── ejs@3.1.3
+209 silly idealTree:prePrune ├── encodeurl@1.0.2
+209 silly idealTree:prePrune ├── end-of-stream@1.4.4
+209 silly idealTree:prePrune ├─┬ engine.io-client@3.4.3
+209 silly idealTree:prePrune │ ├── component-emitter@1.3.0
+209 silly idealTree:prePrune │ ├── debug@4.1.1
+209 silly idealTree:prePrune │ ├── ms@2.1.2
+209 silly idealTree:prePrune │ └── ws@6.1.4
+209 silly idealTree:prePrune ├── engine.io-parser@2.2.0
+209 silly idealTree:prePrune ├─┬ engine.io@3.4.2
+209 silly idealTree:prePrune │ ├── cookie@0.3.1
+209 silly idealTree:prePrune │ ├── debug@4.1.1
+209 silly idealTree:prePrune │ └── ms@2.1.2
+209 silly idealTree:prePrune ├── entities@1.1.2
+209 silly idealTree:prePrune ├── escape-html@1.0.3
+209 silly idealTree:prePrune ├── escape-string-regexp@1.0.5
+209 silly idealTree:prePrune ├── etag@1.8.1
+209 silly idealTree:prePrune ├── express-validator@5.3.0
+209 silly idealTree:prePrune ├── express@4.17.1
+209 silly idealTree:prePrune ├─┬ extract-zip@2.0.1
+209 silly idealTree:prePrune │ ├── debug@4.1.1
+209 silly idealTree:prePrune │ └── ms@2.1.2
+209 silly idealTree:prePrune ├── fd-slicer@1.1.0
+209 silly idealTree:prePrune ├── filelist@1.0.1
+209 silly idealTree:prePrune ├── finalhandler@1.1.2
+209 silly idealTree:prePrune ├── forwarded@0.1.2
+209 silly idealTree:prePrune ├── fresh@0.5.2
+209 silly idealTree:prePrune ├── fs-constants@1.0.0
+209 silly idealTree:prePrune ├── fs.realpath@1.0.0
+209 silly idealTree:prePrune ├── get-stream@5.1.0
+209 silly idealTree:prePrune ├── glob@7.1.6
+209 silly idealTree:prePrune ├── has-binary2@1.0.3
+209 silly idealTree:prePrune ├── has-cors@1.1.0
+209 silly idealTree:prePrune ├── has-flag@3.0.0
+209 silly idealTree:prePrune ├── htmlparser2@3.10.1
+209 silly idealTree:prePrune ├── http-errors@1.7.2
+209 silly idealTree:prePrune ├─┬ https-proxy-agent@4.0.0
+209 silly idealTree:prePrune │ ├── debug@4.1.1
+209 silly idealTree:prePrune │ └── ms@2.1.2
+209 silly idealTree:prePrune ├── iconv-lite@0.4.24
+209 silly idealTree:prePrune ├── ieee754@1.1.13
+209 silly idealTree:prePrune ├── indexof@0.0.1
+209 silly idealTree:prePrune ├── inflight@1.0.6
+209 silly idealTree:prePrune ├── inherits@2.0.3
+209 silly idealTree:prePrune ├── ipaddr.js@1.9.1
+209 silly idealTree:prePrune ├── isarray@2.0.1
+209 silly idealTree:prePrune ├── jake@10.8.2
+209 silly idealTree:prePrune ├── lodash@4.17.15
+209 silly idealTree:prePrune ├── media-typer@0.3.0
+209 silly idealTree:prePrune ├── merge-descriptors@1.0.1
+209 silly idealTree:prePrune ├── methods@1.1.2
+209 silly idealTree:prePrune ├── mime-db@1.44.0
+209 silly idealTree:prePrune ├── mime-types@2.1.27
+209 silly idealTree:prePrune ├── mime@1.6.0
+209 silly idealTree:prePrune ├── minimatch@3.0.4
+209 silly idealTree:prePrune ├── mitt@2.0.1
+209 silly idealTree:prePrune ├── mkdirp-classic@0.5.3
+209 silly idealTree:prePrune ├── ms@2.0.0
+209 silly idealTree:prePrune ├── nan@2.14.1
+209 silly idealTree:prePrune ├── negotiator@0.6.2
+209 silly idealTree:prePrune ├── nth-check@1.0.2
+209 silly idealTree:prePrune ├── object-component@0.0.3
+209 silly idealTree:prePrune ├── on-finished@2.3.0
+209 silly idealTree:prePrune ├── once@1.4.0
+209 silly idealTree:prePrune ├── packet-reader@1.0.0
+209 silly idealTree:prePrune ├── parse5@3.0.3
+209 silly idealTree:prePrune ├── parseqs@0.0.5
+209 silly idealTree:prePrune ├── parseuri@0.0.5
+209 silly idealTree:prePrune ├── parseurl@1.3.3
+209 silly idealTree:prePrune ├── path-is-absolute@1.0.1
+209 silly idealTree:prePrune ├── path-to-regexp@0.1.7
+209 silly idealTree:prePrune ├── pend@1.2.0
+209 silly idealTree:prePrune ├── pg-connection-string@2.2.3
+209 silly idealTree:prePrune ├── pg-int8@1.0.1
+209 silly idealTree:prePrune ├── pg-pool@3.2.1
+209 silly idealTree:prePrune ├── pg-protocol@1.2.4
+209 silly idealTree:prePrune ├── pg-types@2.2.0
+209 silly idealTree:prePrune ├── pg@8.2.1
+209 silly idealTree:prePrune ├── pgpass@1.0.2
+209 silly idealTree:prePrune ├── postgres-array@2.0.0
+209 silly idealTree:prePrune ├── postgres-bytea@1.0.0
+209 silly idealTree:prePrune ├── postgres-date@1.0.5
+209 silly idealTree:prePrune ├── postgres-interval@1.2.0
+209 silly idealTree:prePrune ├── progress@2.0.3
+209 silly idealTree:prePrune ├── proxy-addr@2.0.6
+209 silly idealTree:prePrune ├── proxy-from-env@1.1.0
+209 silly idealTree:prePrune ├── pump@3.0.0
+209 silly idealTree:prePrune ├─┬ puppeteer@4.0.1
+209 silly idealTree:prePrune │ ├── debug@4.1.1
+209 silly idealTree:prePrune │ ├── mime@2.4.6
+209 silly idealTree:prePrune │ └── ms@2.1.2
+209 silly idealTree:prePrune ├── qs@6.7.0
+209 silly idealTree:prePrune ├── range-parser@1.2.1
+209 silly idealTree:prePrune ├── raw-body@2.4.0
+209 silly idealTree:prePrune ├── readable-stream@3.6.0
+209 silly idealTree:prePrune ├── rimraf@3.0.2
+209 silly idealTree:prePrune ├── safe-buffer@5.1.2
+209 silly idealTree:prePrune ├── safer-buffer@2.1.2
+209 silly idealTree:prePrune ├── semver@4.3.2
+209 silly idealTree:prePrune ├─┬ send@0.17.1
+209 silly idealTree:prePrune │ └── ms@2.1.1
+209 silly idealTree:prePrune ├── serve-static@1.14.1
+209 silly idealTree:prePrune ├── setprototypeof@1.1.1
+209 silly idealTree:prePrune ├── sleep@6.2.0
+209 silly idealTree:prePrune ├── socket.io-adapter@1.1.2
+209 silly idealTree:prePrune ├─┬ socket.io-client@2.3.0
+209 silly idealTree:prePrune │ ├── debug@4.1.1
+209 silly idealTree:prePrune │ ├── ms@2.1.2
+209 silly idealTree:prePrune │ └─┬ socket.io-parser@3.3.0
+209 silly idealTree:prePrune │   ├── debug@3.1.0
+209 silly idealTree:prePrune │   └── ms@2.0.0
+209 silly idealTree:prePrune ├─┬ socket.io-parser@3.4.1
+209 silly idealTree:prePrune │ ├── debug@4.1.1
+209 silly idealTree:prePrune │ └── ms@2.1.2
+209 silly idealTree:prePrune ├─┬ socket.io@2.3.0
+209 silly idealTree:prePrune │ ├── debug@4.1.1
+209 silly idealTree:prePrune │ └── ms@2.1.2
+209 silly idealTree:prePrune ├── split@1.0.1
+209 silly idealTree:prePrune ├── statuses@1.5.0
+209 silly idealTree:prePrune ├─┬ string_decoder@1.3.0
+209 silly idealTree:prePrune │ └── safe-buffer@5.2.1
+209 silly idealTree:prePrune ├── supports-color@5.5.0
+209 silly idealTree:prePrune ├── tar-fs@2.1.0
+209 silly idealTree:prePrune ├── tar-stream@2.1.2
+209 silly idealTree:prePrune ├── through@2.3.8
+209 silly idealTree:prePrune ├── to-array@0.1.4
+209 silly idealTree:prePrune ├── toidentifier@1.0.0
+209 silly idealTree:prePrune ├── type-is@1.6.18
+209 silly idealTree:prePrune ├── unbzip2-stream@1.4.3
+209 silly idealTree:prePrune ├── unpipe@1.0.0
+209 silly idealTree:prePrune ├── util-deprecate@1.0.2
+209 silly idealTree:prePrune ├── utils-merge@1.0.1
+209 silly idealTree:prePrune ├── validator@10.11.0
+209 silly idealTree:prePrune ├── vary@1.1.2
+209 silly idealTree:prePrune ├── wrappy@1.0.2
+209 silly idealTree:prePrune ├── ws@7.3.0
+209 silly idealTree:prePrune ├── xmlhttprequest-ssl@1.5.5
+209 silly idealTree:prePrune ├── xtend@4.0.2
+209 silly idealTree:prePrune ├── yauzl@2.10.0
+209 silly idealTree:prePrune └── yeast@0.1.2
+210 silly loadIdealTree Finishing
+211 silly currentTree chat_forip_js@1.0.0
+211 silly currentTree ├── @types/node@14.0.13
+211 silly currentTree ├── @types/yauzl@2.9.1
+211 silly currentTree ├── accepts@1.3.7
+211 silly currentTree ├── after@0.8.2
+211 silly currentTree ├── agent-base@5.1.1
+211 silly currentTree ├── ansi-styles@3.2.1
+211 silly currentTree ├── array-flatten@1.1.1
+211 silly currentTree ├── arraybuffer.slice@0.0.7
+211 silly currentTree ├── async-limiter@1.0.1
+211 silly currentTree ├── async@0.9.2
+211 silly currentTree ├── backo2@1.0.2
+211 silly currentTree ├── balanced-match@1.0.0
+211 silly currentTree ├── base64-arraybuffer@0.1.5
+211 silly currentTree ├── base64-js@1.3.1
+211 silly currentTree ├── base64id@2.0.0
+211 silly currentTree ├── better-assert@1.0.2
+211 silly currentTree ├─┬ bl@4.0.2
+211 silly currentTree │ └── inherits@2.0.4
+211 silly currentTree ├── blob@0.0.5
+211 silly currentTree ├── body-parser@1.19.0
+211 silly currentTree ├── boolbase@1.0.0
+211 silly currentTree ├── brace-expansion@1.1.11
+211 silly currentTree ├── buffer-crc32@0.2.13
+211 silly currentTree ├── buffer-writer@2.0.0
+211 silly currentTree ├── buffer@5.6.0
+211 silly currentTree ├── bytes@3.1.0
+211 silly currentTree ├── callsite@1.0.0
+211 silly currentTree ├── chalk@2.4.2
+211 silly currentTree ├── cheerio@1.0.0-rc.3
+211 silly currentTree ├── chownr@1.1.4
+211 silly currentTree ├── color-convert@1.9.3
+211 silly currentTree ├── color-name@1.1.3
+211 silly currentTree ├── component-bind@1.0.0
+211 silly currentTree ├── component-emitter@1.2.1
+211 silly currentTree ├── component-inherit@0.0.3
+211 silly currentTree ├── concat-map@0.0.1
+211 silly currentTree ├── consign@0.1.6
+211 silly currentTree ├── content-disposition@0.5.3
+211 silly currentTree ├── content-type@1.0.4
+211 silly currentTree ├── cookie-signature@1.0.6
+211 silly currentTree ├── cookie@0.4.0
+211 silly currentTree ├── css-select@1.2.0
+211 silly currentTree ├── css-what@2.1.3
+211 silly currentTree ├── debug@2.6.9
+211 silly currentTree ├── depd@1.1.2
+211 silly currentTree ├── destroy@1.0.4
+211 silly currentTree ├── dom-serializer@0.1.1
+211 silly currentTree ├── domelementtype@1.3.1
+211 silly currentTree ├── domhandler@2.4.2
+211 silly currentTree ├── domutils@1.5.1
+211 silly currentTree ├── ee-first@1.1.1
+211 silly currentTree ├── ejs@3.1.3
+211 silly currentTree ├── encodeurl@1.0.2
+211 silly currentTree ├── end-of-stream@1.4.4
+211 silly currentTree ├─┬ engine.io-client@3.4.3
+211 silly currentTree │ ├── component-emitter@1.3.0
+211 silly currentTree │ ├── debug@4.1.1
+211 silly currentTree │ ├── ms@2.1.2
+211 silly currentTree │ └── ws@6.1.4
+211 silly currentTree ├── engine.io-parser@2.2.0
+211 silly currentTree ├─┬ engine.io@3.4.2
+211 silly currentTree │ ├── cookie@0.3.1
+211 silly currentTree │ ├── debug@4.1.1
+211 silly currentTree │ └── ms@2.1.2
+211 silly currentTree ├── entities@1.1.2
+211 silly currentTree ├── escape-html@1.0.3
+211 silly currentTree ├── escape-string-regexp@1.0.5
+211 silly currentTree ├── etag@1.8.1
+211 silly currentTree ├── express-validator@5.3.0
+211 silly currentTree ├── express@4.17.1
+211 silly currentTree ├─┬ extract-zip@2.0.1
+211 silly currentTree │ ├── debug@4.1.1
+211 silly currentTree │ └── ms@2.1.2
+211 silly currentTree ├── fd-slicer@1.1.0
+211 silly currentTree ├── filelist@1.0.1
+211 silly currentTree ├── finalhandler@1.1.2
+211 silly currentTree ├── forwarded@0.1.2
+211 silly currentTree ├── fresh@0.5.2
+211 silly currentTree ├── fs-constants@1.0.0
+211 silly currentTree ├── fs.realpath@1.0.0
+211 silly currentTree ├── get-stream@5.1.0
+211 silly currentTree ├── glob@7.1.6
+211 silly currentTree ├── has-binary2@1.0.3
+211 silly currentTree ├── has-cors@1.1.0
+211 silly currentTree ├── has-flag@3.0.0
+211 silly currentTree ├── htmlparser2@3.10.1
+211 silly currentTree ├── http-errors@1.7.2
+211 silly currentTree ├─┬ https-proxy-agent@4.0.0
+211 silly currentTree │ ├── debug@4.1.1
+211 silly currentTree │ └── ms@2.1.2
+211 silly currentTree ├── iconv-lite@0.4.24
+211 silly currentTree ├── ieee754@1.1.13
+211 silly currentTree ├── indexof@0.0.1
+211 silly currentTree ├── inflight@1.0.6
+211 silly currentTree ├── inherits@2.0.3
+211 silly currentTree ├── ipaddr.js@1.9.1
+211 silly currentTree ├── isarray@2.0.1
+211 silly currentTree ├── jake@10.8.2
+211 silly currentTree ├── lodash@4.17.15
+211 silly currentTree ├── media-typer@0.3.0
+211 silly currentTree ├── merge-descriptors@1.0.1
+211 silly currentTree ├── methods@1.1.2
+211 silly currentTree ├── mime-db@1.44.0
+211 silly currentTree ├── mime-types@2.1.27
+211 silly currentTree ├── mime@1.6.0
+211 silly currentTree ├── minimatch@3.0.4
+211 silly currentTree ├── mitt@2.0.1
+211 silly currentTree ├── mkdirp-classic@0.5.3
+211 silly currentTree ├── ms@2.0.0
+211 silly currentTree ├── nan@2.14.1
+211 silly currentTree ├── negotiator@0.6.2
+211 silly currentTree ├── nth-check@1.0.2
+211 silly currentTree ├── object-component@0.0.3
+211 silly currentTree ├── on-finished@2.3.0
+211 silly currentTree ├── once@1.4.0
+211 silly currentTree ├── packet-reader@1.0.0
+211 silly currentTree ├── parse5@3.0.3
+211 silly currentTree ├── parseqs@0.0.5
+211 silly currentTree ├── parseuri@0.0.5
+211 silly currentTree ├── parseurl@1.3.3
+211 silly currentTree ├── path-is-absolute@1.0.1
+211 silly currentTree ├── path-to-regexp@0.1.7
+211 silly currentTree ├── pend@1.2.0
+211 silly currentTree ├── pg-connection-string@2.2.3
+211 silly currentTree ├── pg-int8@1.0.1
+211 silly currentTree ├── pg-pool@3.2.1
+211 silly currentTree ├── pg-protocol@1.2.4
+211 silly currentTree ├── pg-types@2.2.0
+211 silly currentTree ├── pg@8.2.1
+211 silly currentTree ├── pgpass@1.0.2
+211 silly currentTree ├── postgres-array@2.0.0
+211 silly currentTree ├── postgres-bytea@1.0.0
+211 silly currentTree ├── postgres-date@1.0.5
+211 silly currentTree ├── postgres-interval@1.2.0
+211 silly currentTree ├── progress@2.0.3
+211 silly currentTree ├── proxy-addr@2.0.6
+211 silly currentTree ├── proxy-from-env@1.1.0
+211 silly currentTree ├── pump@3.0.0
+211 silly currentTree ├── qs@6.7.0
+211 silly currentTree ├── range-parser@1.2.1
+211 silly currentTree ├── raw-body@2.4.0
+211 silly currentTree ├── readable-stream@3.6.0
+211 silly currentTree ├── rimraf@3.0.2
+211 silly currentTree ├── safe-buffer@5.1.2
+211 silly currentTree ├── safer-buffer@2.1.2
+211 silly currentTree ├── semver@4.3.2
+211 silly currentTree ├─┬ send@0.17.1
+211 silly currentTree │ └── ms@2.1.1
+211 silly currentTree ├── serve-static@1.14.1
+211 silly currentTree ├── setprototypeof@1.1.1
+211 silly currentTree ├── sleep@6.2.0
+211 silly currentTree ├── socket.io-adapter@1.1.2
+211 silly currentTree ├─┬ socket.io-client@2.3.0
+211 silly currentTree │ ├── debug@4.1.1
+211 silly currentTree │ ├── ms@2.1.2
+211 silly currentTree │ └─┬ socket.io-parser@3.3.0
+211 silly currentTree │   ├── debug@3.1.0
+211 silly currentTree │   └── ms@2.0.0
+211 silly currentTree ├─┬ socket.io-parser@3.4.1
+211 silly currentTree │ ├── debug@4.1.1
+211 silly currentTree │ └── ms@2.1.2
+211 silly currentTree ├─┬ socket.io@2.3.0
+211 silly currentTree │ ├── debug@4.1.1
+211 silly currentTree │ └── ms@2.1.2
+211 silly currentTree ├── split@1.0.1
+211 silly currentTree ├── statuses@1.5.0
+211 silly currentTree ├─┬ string_decoder@1.3.0
+211 silly currentTree │ └── safe-buffer@5.2.1
+211 silly currentTree ├── supports-color@5.5.0
+211 silly currentTree ├── tar-fs@2.1.0
+211 silly currentTree ├── tar-stream@2.1.2
+211 silly currentTree ├── through@2.3.8
+211 silly currentTree ├── to-array@0.1.4
+211 silly currentTree ├── toidentifier@1.0.0
+211 silly currentTree ├── type-is@1.6.18
+211 silly currentTree ├── unbzip2-stream@1.4.3
+211 silly currentTree ├── unpipe@1.0.0
+211 silly currentTree ├── util-deprecate@1.0.2
+211 silly currentTree ├── utils-merge@1.0.1
+211 silly currentTree ├── validator@10.11.0
+211 silly currentTree ├── vary@1.1.2
+211 silly currentTree ├── wrappy@1.0.2
+211 silly currentTree ├── ws@7.3.0
+211 silly currentTree ├── xmlhttprequest-ssl@1.5.5
+211 silly currentTree ├── xtend@4.0.2
+211 silly currentTree ├── yauzl@2.10.0
+211 silly currentTree └── yeast@0.1.2
+212 silly idealTree chat_forip_js@1.0.0
+212 silly idealTree ├── @types/node@14.0.13
+212 silly idealTree ├── @types/yauzl@2.9.1
+212 silly idealTree ├── accepts@1.3.7
+212 silly idealTree ├── after@0.8.2
+212 silly idealTree ├── agent-base@5.1.1
+212 silly idealTree ├── ansi-styles@3.2.1
+212 silly idealTree ├── array-flatten@1.1.1
+212 silly idealTree ├── arraybuffer.slice@0.0.7
+212 silly idealTree ├── async-limiter@1.0.1
+212 silly idealTree ├── async@0.9.2
+212 silly idealTree ├── backo2@1.0.2
+212 silly idealTree ├── balanced-match@1.0.0
+212 silly idealTree ├── base64-arraybuffer@0.1.5
+212 silly idealTree ├── base64-js@1.3.1
+212 silly idealTree ├── base64id@2.0.0
+212 silly idealTree ├── better-assert@1.0.2
+212 silly idealTree ├─┬ bl@4.0.2
+212 silly idealTree │ └── inherits@2.0.4
+212 silly idealTree ├── blob@0.0.5
+212 silly idealTree ├── body-parser@1.19.0
+212 silly idealTree ├── boolbase@1.0.0
+212 silly idealTree ├── brace-expansion@1.1.11
+212 silly idealTree ├── buffer-crc32@0.2.13
+212 silly idealTree ├── buffer-writer@2.0.0
+212 silly idealTree ├── buffer@5.6.0
+212 silly idealTree ├── bytes@3.1.0
+212 silly idealTree ├── callsite@1.0.0
+212 silly idealTree ├── chalk@2.4.2
+212 silly idealTree ├── cheerio@1.0.0-rc.3
+212 silly idealTree ├── chownr@1.1.4
+212 silly idealTree ├── color-convert@1.9.3
+212 silly idealTree ├── color-name@1.1.3
+212 silly idealTree ├── component-bind@1.0.0
+212 silly idealTree ├── component-emitter@1.2.1
+212 silly idealTree ├── component-inherit@0.0.3
+212 silly idealTree ├── concat-map@0.0.1
+212 silly idealTree ├── consign@0.1.6
+212 silly idealTree ├── content-disposition@0.5.3
+212 silly idealTree ├── content-type@1.0.4
+212 silly idealTree ├── cookie-signature@1.0.6
+212 silly idealTree ├── cookie@0.4.0
+212 silly idealTree ├── css-select@1.2.0
+212 silly idealTree ├── css-what@2.1.3
+212 silly idealTree ├── debug@2.6.9
+212 silly idealTree ├── depd@1.1.2
+212 silly idealTree ├── destroy@1.0.4
+212 silly idealTree ├── dom-serializer@0.1.1
+212 silly idealTree ├── domelementtype@1.3.1
+212 silly idealTree ├── domhandler@2.4.2
+212 silly idealTree ├── domutils@1.5.1
+212 silly idealTree ├── ee-first@1.1.1
+212 silly idealTree ├── ejs@3.1.3
+212 silly idealTree ├── encodeurl@1.0.2
+212 silly idealTree ├── end-of-stream@1.4.4
+212 silly idealTree ├─┬ engine.io-client@3.4.3
+212 silly idealTree │ ├── component-emitter@1.3.0
+212 silly idealTree │ ├── debug@4.1.1
+212 silly idealTree │ ├── ms@2.1.2
+212 silly idealTree │ └── ws@6.1.4
+212 silly idealTree ├── engine.io-parser@2.2.0
+212 silly idealTree ├─┬ engine.io@3.4.2
+212 silly idealTree │ ├── cookie@0.3.1
+212 silly idealTree │ ├── debug@4.1.1
+212 silly idealTree │ └── ms@2.1.2
+212 silly idealTree ├── entities@1.1.2
+212 silly idealTree ├── escape-html@1.0.3
+212 silly idealTree ├── escape-string-regexp@1.0.5
+212 silly idealTree ├── etag@1.8.1
+212 silly idealTree ├── express-validator@5.3.0
+212 silly idealTree ├── express@4.17.1
+212 silly idealTree ├─┬ extract-zip@2.0.1
+212 silly idealTree │ ├── debug@4.1.1
+212 silly idealTree │ └── ms@2.1.2
+212 silly idealTree ├── fd-slicer@1.1.0
+212 silly idealTree ├── filelist@1.0.1
+212 silly idealTree ├── finalhandler@1.1.2
+212 silly idealTree ├── forwarded@0.1.2
+212 silly idealTree ├── fresh@0.5.2
+212 silly idealTree ├── fs-constants@1.0.0
+212 silly idealTree ├── fs.realpath@1.0.0
+212 silly idealTree ├── get-stream@5.1.0
+212 silly idealTree ├── glob@7.1.6
+212 silly idealTree ├── has-binary2@1.0.3
+212 silly idealTree ├── has-cors@1.1.0
+212 silly idealTree ├── has-flag@3.0.0
+212 silly idealTree ├── htmlparser2@3.10.1
+212 silly idealTree ├── http-errors@1.7.2
+212 silly idealTree ├─┬ https-proxy-agent@4.0.0
+212 silly idealTree │ ├── debug@4.1.1
+212 silly idealTree │ └── ms@2.1.2
+212 silly idealTree ├── iconv-lite@0.4.24
+212 silly idealTree ├── ieee754@1.1.13
+212 silly idealTree ├── indexof@0.0.1
+212 silly idealTree ├── inflight@1.0.6
+212 silly idealTree ├── inherits@2.0.3
+212 silly idealTree ├── ipaddr.js@1.9.1
+212 silly idealTree ├── isarray@2.0.1
+212 silly idealTree ├── jake@10.8.2
+212 silly idealTree ├── lodash@4.17.15
+212 silly idealTree ├── media-typer@0.3.0
+212 silly idealTree ├── merge-descriptors@1.0.1
+212 silly idealTree ├── methods@1.1.2
+212 silly idealTree ├── mime-db@1.44.0
+212 silly idealTree ├── mime-types@2.1.27
+212 silly idealTree ├── mime@1.6.0
+212 silly idealTree ├── minimatch@3.0.4
+212 silly idealTree ├── mitt@2.0.1
+212 silly idealTree ├── mkdirp-classic@0.5.3
+212 silly idealTree ├── ms@2.0.0
+212 silly idealTree ├── nan@2.14.1
+212 silly idealTree ├── negotiator@0.6.2
+212 silly idealTree ├── nth-check@1.0.2
+212 silly idealTree ├── object-component@0.0.3
+212 silly idealTree ├── on-finished@2.3.0
+212 silly idealTree ├── once@1.4.0
+212 silly idealTree ├── packet-reader@1.0.0
+212 silly idealTree ├── parse5@3.0.3
+212 silly idealTree ├── parseqs@0.0.5
+212 silly idealTree ├── parseuri@0.0.5
+212 silly idealTree ├── parseurl@1.3.3
+212 silly idealTree ├── path-is-absolute@1.0.1
+212 silly idealTree ├── path-to-regexp@0.1.7
+212 silly idealTree ├── pend@1.2.0
+212 silly idealTree ├── pg-connection-string@2.2.3
+212 silly idealTree ├── pg-int8@1.0.1
+212 silly idealTree ├── pg-pool@3.2.1
+212 silly idealTree ├── pg-protocol@1.2.4
+212 silly idealTree ├── pg-types@2.2.0
+212 silly idealTree ├── pg@8.2.1
+212 silly idealTree ├── pgpass@1.0.2
+212 silly idealTree ├── postgres-array@2.0.0
+212 silly idealTree ├── postgres-bytea@1.0.0
+212 silly idealTree ├── postgres-date@1.0.5
+212 silly idealTree ├── postgres-interval@1.2.0
+212 silly idealTree ├── progress@2.0.3
+212 silly idealTree ├── proxy-addr@2.0.6
+212 silly idealTree ├── proxy-from-env@1.1.0
+212 silly idealTree ├── pump@3.0.0
+212 silly idealTree ├─┬ puppeteer@4.0.1
+212 silly idealTree │ ├── debug@4.1.1
+212 silly idealTree │ ├── mime@2.4.6
+212 silly idealTree │ └── ms@2.1.2
+212 silly idealTree ├── qs@6.7.0
+212 silly idealTree ├── range-parser@1.2.1
+212 silly idealTree ├── raw-body@2.4.0
+212 silly idealTree ├── readable-stream@3.6.0
+212 silly idealTree ├── rimraf@3.0.2
+212 silly idealTree ├── safe-buffer@5.1.2
+212 silly idealTree ├── safer-buffer@2.1.2
+212 silly idealTree ├── semver@4.3.2
+212 silly idealTree ├─┬ send@0.17.1
+212 silly idealTree │ └── ms@2.1.1
+212 silly idealTree ├── serve-static@1.14.1
+212 silly idealTree ├── setprototypeof@1.1.1
+212 silly idealTree ├── sleep@6.2.0
+212 silly idealTree ├── socket.io-adapter@1.1.2
+212 silly idealTree ├─┬ socket.io-client@2.3.0
+212 silly idealTree │ ├── debug@4.1.1
+212 silly idealTree │ ├── ms@2.1.2
+212 silly idealTree │ └─┬ socket.io-parser@3.3.0
+212 silly idealTree │   ├── debug@3.1.0
+212 silly idealTree │   └── ms@2.0.0
+212 silly idealTree ├─┬ socket.io-parser@3.4.1
+212 silly idealTree │ ├── debug@4.1.1
+212 silly idealTree │ └── ms@2.1.2
+212 silly idealTree ├─┬ socket.io@2.3.0
+212 silly idealTree │ ├── debug@4.1.1
+212 silly idealTree │ └── ms@2.1.2
+212 silly idealTree ├── split@1.0.1
+212 silly idealTree ├── statuses@1.5.0
+212 silly idealTree ├─┬ string_decoder@1.3.0
+212 silly idealTree │ └── safe-buffer@5.2.1
+212 silly idealTree ├── supports-color@5.5.0
+212 silly idealTree ├── tar-fs@2.1.0
+212 silly idealTree ├── tar-stream@2.1.2
+212 silly idealTree ├── through@2.3.8
+212 silly idealTree ├── to-array@0.1.4
+212 silly idealTree ├── toidentifier@1.0.0
+212 silly idealTree ├── type-is@1.6.18
+212 silly idealTree ├── unbzip2-stream@1.4.3
+212 silly idealTree ├── unpipe@1.0.0
+212 silly idealTree ├── util-deprecate@1.0.2
+212 silly idealTree ├── utils-merge@1.0.1
+212 silly idealTree ├── validator@10.11.0
+212 silly idealTree ├── vary@1.1.2
+212 silly idealTree ├── wrappy@1.0.2
+212 silly idealTree ├── ws@7.3.0
+212 silly idealTree ├── xmlhttprequest-ssl@1.5.5
+212 silly idealTree ├── xtend@4.0.2
+212 silly idealTree ├── yauzl@2.10.0
+212 silly idealTree └── yeast@0.1.2
+213 silly generateActionsToTake Starting
+214 silly install generateActionsToTake
+215 silly generateActionsToTake Finishing
+216 silly diffTrees action count 13
+217 silly diffTrees update body-parser@1.19.0
+218 silly diffTrees add mime@2.4.6
+219 silly diffTrees add ms@2.1.2
+220 silly diffTrees add debug@4.1.1
+221 silly diffTrees update cheerio@1.0.0-rc.3
+222 silly diffTrees update consign@0.1.6
+223 silly diffTrees update ejs@3.1.3
+224 silly diffTrees update express@4.17.1
+225 silly diffTrees update express-validator@5.3.0
+226 silly diffTrees update pg@8.2.1
+227 silly diffTrees add puppeteer@4.0.1
+228 silly diffTrees update sleep@6.2.0
+229 silly diffTrees update socket.io@2.3.0
+230 silly decomposeActions action count 104
+231 silly decomposeActions fetch body-parser@1.19.0
+232 silly decomposeActions extract body-parser@1.19.0
+233 silly decomposeActions test body-parser@1.19.0
+234 silly decomposeActions preinstall body-parser@1.19.0
+235 silly decomposeActions build body-parser@1.19.0
+236 silly decomposeActions install body-parser@1.19.0
+237 silly decomposeActions postinstall body-parser@1.19.0
+238 silly decomposeActions finalize body-parser@1.19.0
+239 silly decomposeActions fetch mime@2.4.6
+240 silly decomposeActions extract mime@2.4.6
+241 silly decomposeActions test mime@2.4.6
+242 silly decomposeActions preinstall mime@2.4.6
+243 silly decomposeActions build mime@2.4.6
+244 silly decomposeActions install mime@2.4.6
+245 silly decomposeActions postinstall mime@2.4.6
+246 silly decomposeActions finalize mime@2.4.6
+247 silly decomposeActions fetch ms@2.1.2
+248 silly decomposeActions extract ms@2.1.2
+249 silly decomposeActions test ms@2.1.2
+250 silly decomposeActions preinstall ms@2.1.2
+251 silly decomposeActions build ms@2.1.2
+252 silly decomposeActions install ms@2.1.2
+253 silly decomposeActions postinstall ms@2.1.2
+254 silly decomposeActions finalize ms@2.1.2
+255 silly decomposeActions fetch debug@4.1.1
+256 silly decomposeActions extract debug@4.1.1
+257 silly decomposeActions test debug@4.1.1
+258 silly decomposeActions preinstall debug@4.1.1
+259 silly decomposeActions build debug@4.1.1
+260 silly decomposeActions install debug@4.1.1
+261 silly decomposeActions postinstall debug@4.1.1
+262 silly decomposeActions finalize debug@4.1.1
+263 silly decomposeActions fetch cheerio@1.0.0-rc.3
+264 silly decomposeActions extract cheerio@1.0.0-rc.3
+265 silly decomposeActions test cheerio@1.0.0-rc.3
+266 silly decomposeActions preinstall cheerio@1.0.0-rc.3
+267 silly decomposeActions build cheerio@1.0.0-rc.3
+268 silly decomposeActions install cheerio@1.0.0-rc.3
+269 silly decomposeActions postinstall cheerio@1.0.0-rc.3
+270 silly decomposeActions finalize cheerio@1.0.0-rc.3
+271 silly decomposeActions fetch consign@0.1.6
+272 silly decomposeActions extract consign@0.1.6
+273 silly decomposeActions test consign@0.1.6
+274 silly decomposeActions preinstall consign@0.1.6
+275 silly decomposeActions build consign@0.1.6
+276 silly decomposeActions install consign@0.1.6
+277 silly decomposeActions postinstall consign@0.1.6
+278 silly decomposeActions finalize consign@0.1.6
+279 silly decomposeActions fetch ejs@3.1.3
+280 silly decomposeActions extract ejs@3.1.3
+281 silly decomposeActions test ejs@3.1.3
+282 silly decomposeActions preinstall ejs@3.1.3
+283 silly decomposeActions build ejs@3.1.3
+284 silly decomposeActions install ejs@3.1.3
+285 silly decomposeActions postinstall ejs@3.1.3
+286 silly decomposeActions finalize ejs@3.1.3
+287 silly decomposeActions fetch express@4.17.1
+288 silly decomposeActions extract express@4.17.1
+289 silly decomposeActions test express@4.17.1
+290 silly decomposeActions preinstall express@4.17.1
+291 silly decomposeActions build express@4.17.1
+292 silly decomposeActions install express@4.17.1
+293 silly decomposeActions postinstall express@4.17.1
+294 silly decomposeActions finalize express@4.17.1
+295 silly decomposeActions fetch express-validator@5.3.0
+296 silly decomposeActions extract express-validator@5.3.0
+297 silly decomposeActions test express-validator@5.3.0
+298 silly decomposeActions preinstall express-validator@5.3.0
+299 silly decomposeActions build express-validator@5.3.0
+300 silly decomposeActions install express-validator@5.3.0
+301 silly decomposeActions postinstall express-validator@5.3.0
+302 silly decomposeActions finalize express-validator@5.3.0
+303 silly decomposeActions fetch pg@8.2.1
+304 silly decomposeActions extract pg@8.2.1
+305 silly decomposeActions test pg@8.2.1
+306 silly decomposeActions preinstall pg@8.2.1
+307 silly decomposeActions build pg@8.2.1
+308 silly decomposeActions install pg@8.2.1
+309 silly decomposeActions postinstall pg@8.2.1
+310 silly decomposeActions finalize pg@8.2.1
+311 silly decomposeActions fetch puppeteer@4.0.1
+312 silly decomposeActions extract puppeteer@4.0.1
+313 silly decomposeActions test puppeteer@4.0.1
+314 silly decomposeActions preinstall puppeteer@4.0.1
+315 silly decomposeActions build puppeteer@4.0.1
+316 silly decomposeActions install puppeteer@4.0.1
+317 silly decomposeActions postinstall puppeteer@4.0.1
+318 silly decomposeActions finalize puppeteer@4.0.1
+319 silly decomposeActions fetch sleep@6.2.0
+320 silly decomposeActions extract sleep@6.2.0
+321 silly decomposeActions test sleep@6.2.0
+322 silly decomposeActions preinstall sleep@6.2.0
+323 silly decomposeActions build sleep@6.2.0
+324 silly decomposeActions install sleep@6.2.0
+325 silly decomposeActions postinstall sleep@6.2.0
+326 silly decomposeActions finalize sleep@6.2.0
+327 silly decomposeActions fetch socket.io@2.3.0
+328 silly decomposeActions extract socket.io@2.3.0
+329 silly decomposeActions test socket.io@2.3.0
+330 silly decomposeActions preinstall socket.io@2.3.0
+331 silly decomposeActions build socket.io@2.3.0
+332 silly decomposeActions install socket.io@2.3.0
+333 silly decomposeActions postinstall socket.io@2.3.0
+334 silly decomposeActions finalize socket.io@2.3.0
+335 silly executeActions Starting
+336 silly install executeActions
+337 silly doSerial global-install 0
+338 silly doParallel fetch 13
+339 verbose lock using /home/raffdevs/.npm/_locks/staging-f8977113cc547bd4.lock for /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging
+340 silly doParallel extract 13
+341 silly extract body-parser@1.19.0
+342 silly extract mime@2.4.6
+343 silly extract ms@2.1.2
+344 silly extract debug@4.1.1
+345 silly extract cheerio@1.0.0-rc.3
+346 silly extract consign@0.1.6
+347 silly extract ejs@3.1.3
+348 silly extract express@4.17.1
+349 silly extract express-validator@5.3.0
+350 silly extract pg@8.2.1
+351 silly extract puppeteer@4.0.1
+352 silly extract sleep@6.2.0
+353 silly extract socket.io@2.3.0
+354 silly addNamed body-parser@1.19.0
+355 verbose addNamed "1.19.0" is a plain semver version for body-parser
+356 silly mapToRegistry name body-parser
+357 silly mapToRegistry using default registry
+358 silly mapToRegistry registry https://registry.npmjs.org/
+359 silly mapToRegistry uri https://registry.npmjs.org/body-parser
+360 verbose addNameVersion registry:https://registry.npmjs.org/body-parser not in flight; fetching
+361 silly addNamed cheerio@1.0.0-rc.3
+362 verbose addNamed "1.0.0-rc.3" is a plain semver version for cheerio
+363 silly mapToRegistry name cheerio
+364 silly mapToRegistry using default registry
+365 silly mapToRegistry registry https://registry.npmjs.org/
+366 silly mapToRegistry uri https://registry.npmjs.org/cheerio
+367 verbose addNameVersion registry:https://registry.npmjs.org/cheerio not in flight; fetching
+368 silly addNamed ejs@3.1.3
+369 verbose addNamed "3.1.3" is a plain semver version for ejs
+370 silly mapToRegistry name ejs
+371 silly mapToRegistry using default registry
+372 silly mapToRegistry registry https://registry.npmjs.org/
+373 silly mapToRegistry uri https://registry.npmjs.org/ejs
+374 verbose addNameVersion registry:https://registry.npmjs.org/ejs not in flight; fetching
+375 silly addNamed consign@0.1.6
+376 verbose addNamed "0.1.6" is a plain semver version for consign
+377 silly mapToRegistry name consign
+378 silly mapToRegistry using default registry
+379 silly mapToRegistry registry https://registry.npmjs.org/
+380 silly mapToRegistry uri https://registry.npmjs.org/consign
+381 verbose addNameVersion registry:https://registry.npmjs.org/consign not in flight; fetching
+382 silly addNamed express@4.17.1
+383 verbose addNamed "4.17.1" is a plain semver version for express
+384 silly mapToRegistry name express
+385 silly mapToRegistry using default registry
+386 silly mapToRegistry registry https://registry.npmjs.org/
+387 silly mapToRegistry uri https://registry.npmjs.org/express
+388 verbose addNameVersion registry:https://registry.npmjs.org/express not in flight; fetching
+389 silly addNamed express-validator@5.3.0
+390 verbose addNamed "5.3.0" is a plain semver version for express-validator
+391 silly mapToRegistry name express-validator
+392 silly mapToRegistry using default registry
+393 silly mapToRegistry registry https://registry.npmjs.org/
+394 silly mapToRegistry uri https://registry.npmjs.org/express-validator
+395 verbose addNameVersion registry:https://registry.npmjs.org/express-validator not in flight; fetching
+396 silly addNamed pg@8.2.1
+397 verbose addNamed "8.2.1" is a plain semver version for pg
+398 silly mapToRegistry name pg
+399 silly mapToRegistry using default registry
+400 silly mapToRegistry registry https://registry.npmjs.org/
+401 silly mapToRegistry uri https://registry.npmjs.org/pg
+402 verbose addNameVersion registry:https://registry.npmjs.org/pg not in flight; fetching
+403 silly addNamed sleep@6.2.0
+404 verbose addNamed "6.2.0" is a plain semver version for sleep
+405 silly mapToRegistry name sleep
+406 silly mapToRegistry using default registry
+407 silly mapToRegistry registry https://registry.npmjs.org/
+408 silly mapToRegistry uri https://registry.npmjs.org/sleep
+409 verbose addNameVersion registry:https://registry.npmjs.org/sleep not in flight; fetching
+410 silly addNamed socket.io@2.3.0
+411 verbose addNamed "2.3.0" is a plain semver version for socket.io
+412 silly mapToRegistry name socket.io
+413 silly mapToRegistry using default registry
+414 silly mapToRegistry registry https://registry.npmjs.org/
+415 silly mapToRegistry uri https://registry.npmjs.org/socket.io
+416 verbose addNameVersion registry:https://registry.npmjs.org/socket.io not in flight; fetching
+417 verbose unbuild node_modules/.staging/ms-cb48e9a3
+418 verbose unbuild node_modules/.staging/debug-be3e4e3b
+419 verbose unbuild node_modules/.staging/puppeteer-e7cd6fbc
+420 verbose unbuild node_modules/.staging/mime-b5139334
+421 verbose request uri https://registry.npmjs.org/body-parser
+422 verbose request no auth needed
+423 info attempt registry request try #1 at 14:41:56
+424 verbose etag W/"69165633b8917311c8a5b29b5aa3a438"
+425 verbose lastModified Fri, 29 Nov 2019 09:32:45 GMT
+426 http request GET https://registry.npmjs.org/body-parser
+427 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ms-cb48e9a3 is being purged from base /home/raffdevs/Devs Directory/JS/Projects/whats_forip
+428 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ms-cb48e9a3
+429 verbose request uri https://registry.npmjs.org/consign
+430 verbose request no auth needed
+431 info attempt registry request try #1 at 14:41:56
+432 verbose etag W/"930a01b15045840642661bf833544288"
+433 verbose lastModified Sat, 26 May 2018 20:45:15 GMT
+434 http request GET https://registry.npmjs.org/consign
+435 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/debug-be3e4e3b is being purged from base /home/raffdevs/Devs Directory/JS/Projects/whats_forip
+436 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/debug-be3e4e3b
+437 verbose request uri https://registry.npmjs.org/cheerio
+438 verbose request no auth needed
+439 info attempt registry request try #1 at 14:41:56
+440 verbose etag W/"961ae99dd88cd3fab49ad14c6d6b9541"
+441 verbose lastModified Sun, 21 Jun 2020 06:01:02 GMT
+442 http request GET https://registry.npmjs.org/cheerio
+443 verbose request uri https://registry.npmjs.org/express-validator
+444 verbose request no auth needed
+445 info attempt registry request try #1 at 14:41:57
+446 verbose etag W/"ca59da39ffc09ae958375a106be22f15"
+447 verbose lastModified Sun, 21 Jun 2020 14:42:19 GMT
+448 http request GET https://registry.npmjs.org/express-validator
+449 verbose request uri https://registry.npmjs.org/pg
+450 verbose request no auth needed
+451 info attempt registry request try #1 at 14:41:57
+452 verbose etag W/"ae69f7426c0d52987ffc5f67d6c0597c"
+453 verbose lastModified Thu, 09 Jul 2020 15:41:25 GMT
+454 http request GET https://registry.npmjs.org/pg
+455 verbose request uri https://registry.npmjs.org/express
+456 verbose request no auth needed
+457 info attempt registry request try #1 at 14:41:57
+458 verbose etag W/"75df8f92097b42d791578c084af85171"
+459 verbose lastModified Fri, 26 Jun 2020 20:54:17 GMT
+460 http request GET https://registry.npmjs.org/express
+461 verbose request uri https://registry.npmjs.org/ejs
+462 verbose request no auth needed
+463 info attempt registry request try #1 at 14:41:57
+464 verbose etag W/"bf24080b8af27956814dd3567f3e5480"
+465 verbose lastModified Sun, 17 May 2020 07:00:38 GMT
+466 http request GET https://registry.npmjs.org/ejs
+467 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/puppeteer-e7cd6fbc is being purged from base /home/raffdevs/Devs Directory/JS/Projects/whats_forip
+468 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/puppeteer-e7cd6fbc
+469 verbose request uri https://registry.npmjs.org/socket.io
+470 verbose request no auth needed
+471 info attempt registry request try #1 at 14:41:57
+472 verbose etag W/"6f5d16990f6d07007c89963d37453a03"
+473 verbose lastModified Fri, 26 Jun 2020 20:54:15 GMT
+474 http request GET https://registry.npmjs.org/socket.io
+475 verbose request uri https://registry.npmjs.org/sleep
+476 verbose request no auth needed
+477 info attempt registry request try #1 at 14:41:57
+478 verbose etag W/"2e502934c8e99e95d444fd5ffe1f46f6"
+479 verbose lastModified Mon, 13 Jul 2020 11:24:07 GMT
+480 http request GET https://registry.npmjs.org/sleep
+481 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/mime-b5139334 is being purged from base /home/raffdevs/Devs Directory/JS/Projects/whats_forip
+482 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/mime-b5139334
+483 verbose tar unpack /home/raffdevs/.npm/ms/2.1.2/package.tgz
+484 verbose tar unpacking to /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ms-cb48e9a3
+485 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ms-cb48e9a3 is being purged
+486 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ms-cb48e9a3
+487 verbose tar unpack /home/raffdevs/.npm/debug/4.1.1/package.tgz
+488 verbose tar unpacking to /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/debug-be3e4e3b
+489 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/debug-be3e4e3b is being purged
+490 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/debug-be3e4e3b
+491 verbose tar unpack /home/raffdevs/.npm/puppeteer/4.0.1/package.tgz
+492 verbose tar unpacking to /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/puppeteer-e7cd6fbc
+493 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/puppeteer-e7cd6fbc is being purged
+494 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/puppeteer-e7cd6fbc
+495 verbose tar unpack /home/raffdevs/.npm/mime/2.4.6/package.tgz
+496 verbose tar unpacking to /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/mime-b5139334
+497 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/mime-b5139334 is being purged
+498 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/mime-b5139334
+499 silly gunzTarPerm modes [ '755', '644' ]
+500 http 304 https://registry.npmjs.org/body-parser
+501 verbose headers { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+501 verbose headers   connection: 'keep-alive',
+501 verbose headers   'set-cookie':
+501 verbose headers    [ '__cfduid=dc52cd6690b4209480a351ecee27d490f1595094116; expires=Mon, 17-Aug-20 17:41:56 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+501 verbose headers   'cf-ray': '5b4dff173d25eebe-GRU',
+501 verbose headers   age: '2669',
+501 verbose headers   'cache-control': 'public, max-age=300',
+501 verbose headers   etag: '"69165633b8917311c8a5b29b5aa3a438"',
+501 verbose headers   'last-modified': 'Fri, 29 Nov 2019 09:32:45 GMT',
+501 verbose headers   vary: 'Accept-Encoding',
+501 verbose headers   'cf-cache-status': 'HIT',
+501 verbose headers   'cf-request-id': '04049dc2840000eebe8a926200000001',
+501 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+501 verbose headers   server: 'cloudflare' }
+502 silly get cb [ 304,
+502 silly get   { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+502 silly get     connection: 'keep-alive',
+502 silly get     'set-cookie':
+502 silly get      [ '__cfduid=dc52cd6690b4209480a351ecee27d490f1595094116; expires=Mon, 17-Aug-20 17:41:56 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+502 silly get     'cf-ray': '5b4dff173d25eebe-GRU',
+502 silly get     age: '2669',
+502 silly get     'cache-control': 'public, max-age=300',
+502 silly get     etag: '"69165633b8917311c8a5b29b5aa3a438"',
+502 silly get     'last-modified': 'Fri, 29 Nov 2019 09:32:45 GMT',
+502 silly get     vary: 'Accept-Encoding',
+502 silly get     'cf-cache-status': 'HIT',
+502 silly get     'cf-request-id': '04049dc2840000eebe8a926200000001',
+502 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+502 silly get     server: 'cloudflare' } ]
+503 verbose etag https://registry.npmjs.org/body-parser from cache
+504 verbose get saving body-parser to /home/raffdevs/.npm/registry.npmjs.org/body-parser/.cache.json
+505 silly gunzTarPerm modes [ '755', '644' ]
+506 silly gunzTarPerm modes [ '755', '644' ]
+507 silly gunzTarPerm modes [ '755', '644' ]
+508 silly gunzTarPerm extractEntry package.json
+509 silly gunzTarPerm extractEntry package.json
+510 silly gunzTarPerm extractEntry LICENSE
+511 silly gunzTarPerm extractEntry LICENSE
+512 silly gunzTarPerm extractEntry index.js
+513 silly gunzTarPerm extractEntry license.md
+514 silly gunzTarPerm extractEntry CHANGELOG.md
+515 silly gunzTarPerm extractEntry lib/Accessibility.js
+516 silly gunzTarPerm extractEntry LICENSE
+517 silly gunzTarPerm extractEntry README.md
+518 silly gunzTarPerm extractEntry dist/debug.js
+519 silly gunzTarPerm extractEntry src/browser.js
+520 silly gunzTarPerm extractEntry src/common.js
+521 silly gunzTarPerm extractEntry src/index.js
+522 silly gunzTarPerm extractEntry src/node.js
+523 silly gunzTarPerm extractEntry lib/api-docs-entry.js
+524 silly gunzTarPerm extractEntry cli.js
+525 silly gunzTarPerm extractEntry index.js
+526 silly mapToRegistry name body-parser
+527 silly mapToRegistry using default registry
+528 silly mapToRegistry registry https://registry.npmjs.org/
+529 silly mapToRegistry uri https://registry.npmjs.org/body-parser
+530 verbose addRemoteTarball https://registry.npmjs.org/body-parser/-/body-parser-1.19.0.tgz not in flight; adding
+531 verbose addRemoteTarball [ 'https://registry.npmjs.org/body-parser/-/body-parser-1.19.0.tgz',
+531 verbose addRemoteTarball   '96b2709e57c9c4e09a6fd66a8fd979844f69f08a' ]
+532 info retry fetch attempt 1 at 14:41:57
+533 info attempt registry request try #1 at 14:41:57
+534 http fetch GET https://registry.npmjs.org/body-parser/-/body-parser-1.19.0.tgz
+535 silly gunzTarPerm extractEntry readme.md
+536 silly gunzTarPerm extractEntry lib/api.js
+537 silly gunzTarPerm extractEntry lib/Browser.js
+538 silly gunzTarPerm extractEntry lite.js
+539 silly gunzTarPerm extractEntry Mime.js
+540 silly gunzTarPerm extractEntry types/other.js
+541 silly gunzTarPerm extractEntry types/standard.js
+542 silly gunzTarPerm extractEntry package.json
+543 silly gunzTarPerm extractEntry CHANGELOG.md
+544 silly gunzTarPerm extractEntry README.md
+545 silly gunzTarPerm extractEntry lib/BrowserFetcher.js
+546 silly gunzTarPerm extractEntry lib/launcher/BrowserRunner.js
+547 silly gunzTarPerm extractEntry lib/Connection.js
+548 silly gunzTarPerm extractEntry lib/ConnectionTransport.js
+549 silly gunzTarPerm extractEntry lib/ConsoleMessage.js
+550 silly gunzTarPerm extractEntry lib/Coverage.js
+551 http 304 https://registry.npmjs.org/consign
+552 verbose headers { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+552 verbose headers   connection: 'keep-alive',
+552 verbose headers   'set-cookie':
+552 verbose headers    [ '__cfduid=d8c04ffa13f509a15c02b6b482b63cfc01595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+552 verbose headers   'cf-ray': '5b4dff179a2cf3bf-GRU',
+552 verbose headers   age: '5617',
+552 verbose headers   'cache-control': 'public, max-age=300',
+552 verbose headers   etag: '"930a01b15045840642661bf833544288"',
+552 verbose headers   'last-modified': 'Sat, 26 May 2018 20:45:15 GMT',
+552 verbose headers   vary: 'Accept-Encoding',
+552 verbose headers   'cf-cache-status': 'HIT',
+552 verbose headers   'cf-request-id': '04049dc2c00000f3bf0c092200000001',
+552 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+552 verbose headers   server: 'cloudflare' }
+553 silly get cb [ 304,
+553 silly get   { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+553 silly get     connection: 'keep-alive',
+553 silly get     'set-cookie':
+553 silly get      [ '__cfduid=d8c04ffa13f509a15c02b6b482b63cfc01595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+553 silly get     'cf-ray': '5b4dff179a2cf3bf-GRU',
+553 silly get     age: '5617',
+553 silly get     'cache-control': 'public, max-age=300',
+553 silly get     etag: '"930a01b15045840642661bf833544288"',
+553 silly get     'last-modified': 'Sat, 26 May 2018 20:45:15 GMT',
+553 silly get     vary: 'Accept-Encoding',
+553 silly get     'cf-cache-status': 'HIT',
+553 silly get     'cf-request-id': '04049dc2c00000f3bf0c092200000001',
+553 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+553 silly get     server: 'cloudflare' } ]
+554 verbose etag https://registry.npmjs.org/consign from cache
+555 verbose get saving consign to /home/raffdevs/.npm/registry.npmjs.org/consign/.cache.json
+556 silly gunzTarPerm extractEntry DeviceDescriptors.js
+557 silly gunzTarPerm extractEntry lib/DeviceDescriptors.js
+558 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ms-cb48e9a3/node_modules is being purged
+559 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ms-cb48e9a3/node_modules
+560 silly gunzTarPerm extractEntry lib/Dialog.js
+561 silly gunzTarPerm extractEntry lib/DOMWorld.js
+562 silly mapToRegistry name consign
+563 silly mapToRegistry using default registry
+564 silly mapToRegistry registry https://registry.npmjs.org/
+565 silly mapToRegistry uri https://registry.npmjs.org/consign
+566 verbose addRemoteTarball https://registry.npmjs.org/consign/-/consign-0.1.6.tgz not in flight; adding
+567 verbose addRemoteTarball [ 'https://registry.npmjs.org/consign/-/consign-0.1.6.tgz',
+567 verbose addRemoteTarball   '5a9b3a60ba5d362a514841b0c633e584486a72d7' ]
+568 info retry fetch attempt 1 at 14:41:57
+569 info attempt registry request try #1 at 14:41:57
+570 http fetch GET https://registry.npmjs.org/consign/-/consign-0.1.6.tgz
+571 silly gunzTarPerm extractEntry lib/EmulationManager.js
+572 silly gunzTarPerm extractEntry Errors.js
+573 silly gunzTarPerm extractEntry lib/Errors.js
+574 silly gunzTarPerm extractEntry lib/EventEmitter.js
+575 silly gunzTarPerm extractEntry lib/Events.js
+576 silly gunzTarPerm extractEntry lib/ExecutionContext.js
+577 silly gunzTarPerm extractEntry lib/FileChooser.js
+578 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/debug-be3e4e3b/node_modules is being purged
+579 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/debug-be3e4e3b/node_modules
+580 silly gunzTarPerm extractEntry lib/FrameManager.js
+581 silly gunzTarPerm extractEntry lib/helper.js
+582 http fetch 200 https://registry.npmjs.org/body-parser/-/body-parser-1.19.0.tgz
+583 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/mime-b5139334/node_modules is being purged
+584 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/mime-b5139334/node_modules
+585 silly fetchAndShaCheck shasum 96b2709e57c9c4e09a6fd66a8fd979844f69f08a
+586 silly gunzTarPerm extractEntry lib/HTTPRequest.js
+587 silly gunzTarPerm extractEntry lib/HTTPResponse.js
+588 silly gunzTarPerm extractEntry index.js
+589 verbose addTmpTarball /tmp/npm-27100-aec96dc2/registry.npmjs.org/body-parser/-/body-parser-1.19.0.tgz not in flight; adding
+590 verbose addTmpTarball already have metadata; skipping unpack for body-parser@1.19.0
+591 silly gunzTarPerm extractEntry lib/index.js
+592 silly gunzTarPerm extractEntry lib/Input.js
+593 silly gunzTarPerm extractEntry install.js
+594 verbose unbuild node_modules/.staging/body-parser-af57398b
+595 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/body-parser-af57398b is being purged from base /home/raffdevs/Devs Directory/JS/Projects/whats_forip
+596 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/body-parser-af57398b
+597 verbose tar unpack /home/raffdevs/.npm/body-parser/1.19.0/package.tgz
+598 verbose tar unpacking to /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/body-parser-af57398b
+599 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/body-parser-af57398b is being purged
+600 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/body-parser-af57398b
+601 silly gunzTarPerm modes [ '755', '644' ]
+602 silly gunzTarPerm extractEntry lib/JSHandle.js
+603 silly gunzTarPerm extractEntry lib/Launcher.js
+604 silly gunzTarPerm extractEntry lib/launcher/LaunchOptions.js
+605 silly gunzTarPerm extractEntry lib/LifecycleWatcher.js
+606 silly gunzTarPerm extractEntry package.json
+607 silly gunzTarPerm extractEntry HISTORY.md
+608 silly gunzTarPerm extractEntry index.js
+609 silly gunzTarPerm extractEntry LICENSE
+610 silly gunzTarPerm extractEntry README.md
+611 silly gunzTarPerm extractEntry lib/read.js
+612 silly gunzTarPerm extractEntry lib/types/json.js
+613 silly gunzTarPerm extractEntry lib/types/raw.js
+614 silly gunzTarPerm extractEntry lib/types/text.js
+615 silly gunzTarPerm extractEntry lib/types/urlencoded.js
+616 silly gunzTarPerm extractEntry lib/NetworkManager.js
+617 silly gunzTarPerm extractEntry lib/Page.js
+618 silly gunzTarPerm extractEntry lib/PipeTransport.js
+619 silly gunzTarPerm extractEntry lib/Puppeteer.js
+620 silly gunzTarPerm extractEntry lib/PuppeteerViewport.js
+621 silly gunzTarPerm extractEntry lib/QueryHandler.js
+622 silly gunzTarPerm extractEntry lib/SecurityDetails.js
+623 silly gunzTarPerm extractEntry lib/Target.js
+624 silly gunzTarPerm extractEntry lib/TimeoutSettings.js
+625 silly gunzTarPerm extractEntry lib/Tracing.js
+626 silly gunzTarPerm extractEntry typescript-if-required.js
+627 silly gunzTarPerm extractEntry lib/USKeyboardLayout.js
+628 silly gunzTarPerm extractEntry lib/WebSocketTransport.js
+629 silly gunzTarPerm extractEntry lib/WebWorker.js
+630 silly gunzTarPerm extractEntry package.json
+631 silly gunzTarPerm extractEntry lib/Accessibility.d.ts.map
+632 silly gunzTarPerm extractEntry lib/api-docs-entry.d.ts.map
+633 silly gunzTarPerm extractEntry lib/api.d.ts.map
+634 silly gunzTarPerm extractEntry lib/Browser.d.ts.map
+635 silly gunzTarPerm extractEntry lib/BrowserFetcher.d.ts.map
+636 silly gunzTarPerm extractEntry lib/launcher/BrowserRunner.d.ts.map
+637 silly gunzTarPerm extractEntry lib/Connection.d.ts.map
+638 silly gunzTarPerm extractEntry lib/ConnectionTransport.d.ts.map
+639 silly gunzTarPerm extractEntry lib/ConsoleMessage.d.ts.map
+640 silly gunzTarPerm extractEntry lib/Coverage.d.ts.map
+641 silly gunzTarPerm extractEntry lib/DeviceDescriptors.d.ts.map
+642 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/body-parser-af57398b/node_modules is being purged
+643 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/body-parser-af57398b/node_modules
+644 silly gunzTarPerm extractEntry lib/Dialog.d.ts.map
+645 silly gunzTarPerm extractEntry lib/DOMWorld.d.ts.map
+646 http 304 https://registry.npmjs.org/socket.io
+647 verbose headers { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+647 verbose headers   connection: 'keep-alive',
+647 verbose headers   'set-cookie':
+647 verbose headers    [ '__cfduid=d916bbc10bc51c30442ebdb748b8464071595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+647 verbose headers   'cf-ray': '5b4dff17ec1bf5ef-GRU',
+647 verbose headers   age: '39',
+647 verbose headers   'cache-control': 'public, max-age=300',
+647 verbose headers   etag: '"6f5d16990f6d07007c89963d37453a03"',
+647 verbose headers   'last-modified': 'Fri, 26 Jun 2020 20:54:15 GMT',
+647 verbose headers   vary: 'Accept-Encoding',
+647 verbose headers   'cf-cache-status': 'HIT',
+647 verbose headers   'cf-request-id': '04049dc2ee0000f5ef68812200000001',
+647 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+647 verbose headers   server: 'cloudflare' }
+648 silly get cb [ 304,
+648 silly get   { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+648 silly get     connection: 'keep-alive',
+648 silly get     'set-cookie':
+648 silly get      [ '__cfduid=d916bbc10bc51c30442ebdb748b8464071595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+648 silly get     'cf-ray': '5b4dff17ec1bf5ef-GRU',
+648 silly get     age: '39',
+648 silly get     'cache-control': 'public, max-age=300',
+648 silly get     etag: '"6f5d16990f6d07007c89963d37453a03"',
+648 silly get     'last-modified': 'Fri, 26 Jun 2020 20:54:15 GMT',
+648 silly get     vary: 'Accept-Encoding',
+648 silly get     'cf-cache-status': 'HIT',
+648 silly get     'cf-request-id': '04049dc2ee0000f5ef68812200000001',
+648 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+648 silly get     server: 'cloudflare' } ]
+649 verbose etag https://registry.npmjs.org/socket.io from cache
+650 verbose get saving socket.io to /home/raffdevs/.npm/registry.npmjs.org/socket.io/.cache.json
+651 silly gunzTarPerm extractEntry lib/EmulationManager.d.ts.map
+652 silly gunzTarPerm extractEntry lib/Errors.d.ts.map
+653 http fetch 200 https://registry.npmjs.org/consign/-/consign-0.1.6.tgz
+654 silly fetchAndShaCheck shasum 5a9b3a60ba5d362a514841b0c633e584486a72d7
+655 silly mapToRegistry name socket.io
+656 silly mapToRegistry using default registry
+657 silly mapToRegistry registry https://registry.npmjs.org/
+658 silly mapToRegistry uri https://registry.npmjs.org/socket.io
+659 verbose addRemoteTarball https://registry.npmjs.org/socket.io/-/socket.io-2.3.0.tgz not in flight; adding
+660 verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io/-/socket.io-2.3.0.tgz',
+660 verbose addRemoteTarball   'cd762ed6a4faeca59bc1f3e243c0969311eb73fb' ]
+661 verbose addTmpTarball /tmp/npm-27100-aec96dc2/registry.npmjs.org/consign/-/consign-0.1.6.tgz not in flight; adding
+662 verbose addTmpTarball already have metadata; skipping unpack for consign@0.1.6
+663 silly gunzTarPerm extractEntry lib/EventEmitter.d.ts.map
+664 silly gunzTarPerm extractEntry lib/Events.d.ts.map
+665 info retry fetch attempt 1 at 14:41:57
+666 info attempt registry request try #1 at 14:41:57
+667 http fetch GET https://registry.npmjs.org/socket.io/-/socket.io-2.3.0.tgz
+668 http 304 https://registry.npmjs.org/express
+669 verbose headers { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+669 verbose headers   connection: 'keep-alive',
+669 verbose headers   'set-cookie':
+669 verbose headers    [ '__cfduid=dc08a3d00b8bbf211d1f43beda1c0ee491595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+669 verbose headers   'cf-ray': '5b4dff17eee7f6bf-GRU',
+669 verbose headers   age: '4241',
+669 verbose headers   'cache-control': 'public, max-age=300',
+669 verbose headers   etag: '"75df8f92097b42d791578c084af85171"',
+669 verbose headers   'last-modified': 'Fri, 26 Jun 2020 20:54:17 GMT',
+669 verbose headers   vary: 'Accept-Encoding',
+669 verbose headers   'cf-cache-status': 'HIT',
+669 verbose headers   'cf-request-id': '04049dc2f40000f6bfe688b200000001',
+669 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+669 verbose headers   server: 'cloudflare' }
+670 silly get cb [ 304,
+670 silly get   { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+670 silly get     connection: 'keep-alive',
+670 silly get     'set-cookie':
+670 silly get      [ '__cfduid=dc08a3d00b8bbf211d1f43beda1c0ee491595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+670 silly get     'cf-ray': '5b4dff17eee7f6bf-GRU',
+670 silly get     age: '4241',
+670 silly get     'cache-control': 'public, max-age=300',
+670 silly get     etag: '"75df8f92097b42d791578c084af85171"',
+670 silly get     'last-modified': 'Fri, 26 Jun 2020 20:54:17 GMT',
+670 silly get     vary: 'Accept-Encoding',
+670 silly get     'cf-cache-status': 'HIT',
+670 silly get     'cf-request-id': '04049dc2f40000f6bfe688b200000001',
+670 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+670 silly get     server: 'cloudflare' } ]
+671 verbose etag https://registry.npmjs.org/express from cache
+672 verbose get saving express to /home/raffdevs/.npm/registry.npmjs.org/express/.cache.json
+673 http 304 https://registry.npmjs.org/pg
+674 verbose headers { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+674 verbose headers   connection: 'keep-alive',
+674 verbose headers   'set-cookie':
+674 verbose headers    [ '__cfduid=da38d9b2e5b695c0acb688c797fbfa5f01595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+674 verbose headers   'cf-ray': '5b4dff17ebdcf748-GRU',
+674 verbose headers   age: '5001',
+674 verbose headers   'cache-control': 'public, max-age=300',
+674 verbose headers   etag: '"ae69f7426c0d52987ffc5f67d6c0597c"',
+674 verbose headers   'last-modified': 'Thu, 09 Jul 2020 15:41:25 GMT',
+674 verbose headers   vary: 'Accept-Encoding',
+674 verbose headers   'cf-cache-status': 'HIT',
+674 verbose headers   'cf-request-id': '04049dc2f00000f7485a993200000001',
+674 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+674 verbose headers   server: 'cloudflare' }
+675 silly get cb [ 304,
+675 silly get   { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+675 silly get     connection: 'keep-alive',
+675 silly get     'set-cookie':
+675 silly get      [ '__cfduid=da38d9b2e5b695c0acb688c797fbfa5f01595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+675 silly get     'cf-ray': '5b4dff17ebdcf748-GRU',
+675 silly get     age: '5001',
+675 silly get     'cache-control': 'public, max-age=300',
+675 silly get     etag: '"ae69f7426c0d52987ffc5f67d6c0597c"',
+675 silly get     'last-modified': 'Thu, 09 Jul 2020 15:41:25 GMT',
+675 silly get     vary: 'Accept-Encoding',
+675 silly get     'cf-cache-status': 'HIT',
+675 silly get     'cf-request-id': '04049dc2f00000f7485a993200000001',
+675 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+675 silly get     server: 'cloudflare' } ]
+676 verbose etag https://registry.npmjs.org/pg from cache
+677 verbose get saving pg to /home/raffdevs/.npm/registry.npmjs.org/pg/.cache.json
+678 http 304 https://registry.npmjs.org/cheerio
+679 verbose headers { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+679 verbose headers   connection: 'keep-alive',
+679 verbose headers   'set-cookie':
+679 verbose headers    [ '__cfduid=db76595a8943537293e15fff209d88d251595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+679 verbose headers   'cf-ray': '5b4dff17eb51f66b-GRU',
+679 verbose headers   age: '1787',
+679 verbose headers   'cache-control': 'public, max-age=300',
+679 verbose headers   etag: '"961ae99dd88cd3fab49ad14c6d6b9541"',
+679 verbose headers   'last-modified': 'Sun, 21 Jun 2020 06:01:02 GMT',
+679 verbose headers   vary: 'Accept-Encoding',
+679 verbose headers   'cf-cache-status': 'HIT',
+679 verbose headers   'cf-request-id': '04049dc2f00000f66b1028b200000001',
+679 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+679 verbose headers   server: 'cloudflare' }
+680 silly get cb [ 304,
+680 silly get   { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+680 silly get     connection: 'keep-alive',
+680 silly get     'set-cookie':
+680 silly get      [ '__cfduid=db76595a8943537293e15fff209d88d251595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+680 silly get     'cf-ray': '5b4dff17eb51f66b-GRU',
+680 silly get     age: '1787',
+680 silly get     'cache-control': 'public, max-age=300',
+680 silly get     etag: '"961ae99dd88cd3fab49ad14c6d6b9541"',
+680 silly get     'last-modified': 'Sun, 21 Jun 2020 06:01:02 GMT',
+680 silly get     vary: 'Accept-Encoding',
+680 silly get     'cf-cache-status': 'HIT',
+680 silly get     'cf-request-id': '04049dc2f00000f66b1028b200000001',
+680 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+680 silly get     server: 'cloudflare' } ]
+681 verbose etag https://registry.npmjs.org/cheerio from cache
+682 verbose get saving cheerio to /home/raffdevs/.npm/registry.npmjs.org/cheerio/.cache.json
+683 http 304 https://registry.npmjs.org/ejs
+684 verbose headers { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+684 verbose headers   connection: 'keep-alive',
+684 verbose headers   'set-cookie':
+684 verbose headers    [ '__cfduid=dc68d20b61bbb5f6d72ca4f58279341a01595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+684 verbose headers   'cf-ray': '5b4dff17fc2df5db-GRU',
+684 verbose headers   age: '1348',
+684 verbose headers   'cache-control': 'public, max-age=300',
+684 verbose headers   etag: '"bf24080b8af27956814dd3567f3e5480"',
+684 verbose headers   'last-modified': 'Sun, 17 May 2020 07:00:38 GMT',
+684 verbose headers   vary: 'Accept-Encoding',
+684 verbose headers   'cf-cache-status': 'HIT',
+684 verbose headers   'cf-request-id': '04049dc2f80000f5db0330f200000001',
+684 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+684 verbose headers   server: 'cloudflare' }
+685 silly get cb [ 304,
+685 silly get   { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+685 silly get     connection: 'keep-alive',
+685 silly get     'set-cookie':
+685 silly get      [ '__cfduid=dc68d20b61bbb5f6d72ca4f58279341a01595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+685 silly get     'cf-ray': '5b4dff17fc2df5db-GRU',
+685 silly get     age: '1348',
+685 silly get     'cache-control': 'public, max-age=300',
+685 silly get     etag: '"bf24080b8af27956814dd3567f3e5480"',
+685 silly get     'last-modified': 'Sun, 17 May 2020 07:00:38 GMT',
+685 silly get     vary: 'Accept-Encoding',
+685 silly get     'cf-cache-status': 'HIT',
+685 silly get     'cf-request-id': '04049dc2f80000f5db0330f200000001',
+685 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+685 silly get     server: 'cloudflare' } ]
+686 verbose etag https://registry.npmjs.org/ejs from cache
+687 verbose get saving ejs to /home/raffdevs/.npm/registry.npmjs.org/ejs/.cache.json
+688 silly gunzTarPerm extractEntry lib/ExecutionContext.d.ts.map
+689 silly gunzTarPerm extractEntry lib/FileChooser.d.ts.map
+690 silly gunzTarPerm extractEntry lib/FrameManager.d.ts.map
+691 silly gunzTarPerm extractEntry lib/helper.d.ts.map
+692 verbose unbuild node_modules/.staging/consign-397ab5e3
+693 silly mapToRegistry name express
+694 silly mapToRegistry using default registry
+695 silly mapToRegistry registry https://registry.npmjs.org/
+696 silly mapToRegistry uri https://registry.npmjs.org/express
+697 verbose addRemoteTarball https://registry.npmjs.org/express/-/express-4.17.1.tgz not in flight; adding
+698 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-4.17.1.tgz',
+698 verbose addRemoteTarball   '4491fc38605cf51f8629d39c2b5d026f98a4c134' ]
+699 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/consign-397ab5e3 is being purged from base /home/raffdevs/Devs Directory/JS/Projects/whats_forip
+700 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/consign-397ab5e3
+701 silly mapToRegistry name pg
+702 silly mapToRegistry using default registry
+703 silly mapToRegistry registry https://registry.npmjs.org/
+704 silly mapToRegistry uri https://registry.npmjs.org/pg
+705 verbose addRemoteTarball https://registry.npmjs.org/pg/-/pg-8.2.1.tgz not in flight; adding
+706 verbose addRemoteTarball [ 'https://registry.npmjs.org/pg/-/pg-8.2.1.tgz',
+706 verbose addRemoteTarball   'f5a81f5e2025182fbe701514d3e1a43e68a616ac' ]
+707 silly mapToRegistry name cheerio
+708 silly mapToRegistry using default registry
+709 silly mapToRegistry registry https://registry.npmjs.org/
+710 silly mapToRegistry uri https://registry.npmjs.org/cheerio
+711 verbose addRemoteTarball https://registry.npmjs.org/cheerio/-/cheerio-1.0.0-rc.3.tgz not in flight; adding
+712 verbose addRemoteTarball [ 'https://registry.npmjs.org/cheerio/-/cheerio-1.0.0-rc.3.tgz',
+712 verbose addRemoteTarball   '094636d425b2e9c0f4eb91a46c05630c9a1a8bf6' ]
+713 verbose tar unpack /home/raffdevs/.npm/consign/0.1.6/package.tgz
+714 verbose tar unpacking to /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/consign-397ab5e3
+715 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/consign-397ab5e3 is being purged
+716 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/consign-397ab5e3
+717 silly gunzTarPerm modes [ '755', '644' ]
+718 info retry fetch attempt 1 at 14:41:57
+719 info attempt registry request try #1 at 14:41:57
+720 http fetch GET https://registry.npmjs.org/express/-/express-4.17.1.tgz
+721 silly mapToRegistry name ejs
+722 silly mapToRegistry using default registry
+723 silly mapToRegistry registry https://registry.npmjs.org/
+724 silly mapToRegistry uri https://registry.npmjs.org/ejs
+725 verbose addRemoteTarball https://registry.npmjs.org/ejs/-/ejs-3.1.3.tgz not in flight; adding
+726 verbose addRemoteTarball [ 'https://registry.npmjs.org/ejs/-/ejs-3.1.3.tgz',
+726 verbose addRemoteTarball   '514d967a8894084d18d3d47bd169a1c0560f093d' ]
+727 info retry fetch attempt 1 at 14:41:57
+728 info attempt registry request try #1 at 14:41:57
+729 http fetch GET https://registry.npmjs.org/cheerio/-/cheerio-1.0.0-rc.3.tgz
+730 info retry fetch attempt 1 at 14:41:57
+731 info attempt registry request try #1 at 14:41:57
+732 http fetch GET https://registry.npmjs.org/pg/-/pg-8.2.1.tgz
+733 silly gunzTarPerm extractEntry lib/HTTPRequest.d.ts.map
+734 silly gunzTarPerm extractEntry lib/HTTPResponse.d.ts.map
+735 silly gunzTarPerm extractEntry lib/index.d.ts.map
+736 info retry fetch attempt 1 at 14:41:57
+737 info attempt registry request try #1 at 14:41:57
+738 http fetch GET https://registry.npmjs.org/ejs/-/ejs-3.1.3.tgz
+739 silly gunzTarPerm extractEntry lib/Input.d.ts.map
+740 silly gunzTarPerm extractEntry package.json
+741 silly gunzTarPerm extractEntry .npmignore
+742 silly gunzTarPerm extractEntry README.md
+743 silly gunzTarPerm extractEntry lib/JSHandle.d.ts.map
+744 silly gunzTarPerm extractEntry lib/Launcher.d.ts.map
+745 silly gunzTarPerm extractEntry LICENSE
+746 silly gunzTarPerm extractEntry index.js
+747 silly gunzTarPerm extractEntry lib/launcher/LaunchOptions.d.ts.map
+748 silly gunzTarPerm extractEntry lib/LifecycleWatcher.d.ts.map
+749 silly gunzTarPerm extractEntry .jshintrc
+750 silly gunzTarPerm extractEntry test/config.js
+751 silly gunzTarPerm extractEntry lib/NetworkManager.d.ts.map
+752 silly gunzTarPerm extractEntry lib/Page.d.ts.map
+753 silly gunzTarPerm extractEntry test/exclude.js
+754 silly gunzTarPerm extractEntry test/include.js
+755 silly gunzTarPerm extractEntry lib/PipeTransport.d.ts.map
+756 silly gunzTarPerm extractEntry lib/Puppeteer.d.ts.map
+757 silly gunzTarPerm extractEntry lib/PuppeteerViewport.d.ts.map
+758 http fetch 200 https://registry.npmjs.org/socket.io/-/socket.io-2.3.0.tgz
+759 silly gunzTarPerm extractEntry lib/QueryHandler.d.ts.map
+760 silly gunzTarPerm extractEntry test/into.js
+761 silly gunzTarPerm extractEntry lib/SecurityDetails.d.ts.map
+762 silly fetchAndShaCheck shasum cd762ed6a4faeca59bc1f3e243c0969311eb73fb
+763 verbose addTmpTarball /tmp/npm-27100-aec96dc2/registry.npmjs.org/socket.io/-/socket.io-2.3.0.tgz not in flight; adding
+764 verbose addTmpTarball already have metadata; skipping unpack for socket.io@2.3.0
+765 silly gunzTarPerm extractEntry test/locale.js
+766 silly gunzTarPerm extractEntry test/tests.js
+767 silly gunzTarPerm extractEntry lib/Target.d.ts.map
+768 silly gunzTarPerm extractEntry lib/TimeoutSettings.d.ts.map
+769 silly gunzTarPerm extractEntry test/test-app/config/dev-config.json
+770 silly gunzTarPerm extractEntry test/test-app/controllers/one.js
+771 silly gunzTarPerm extractEntry lib/Tracing.d.ts.map
+772 silly gunzTarPerm extractEntry lib/USKeyboardLayout.d.ts.map
+773 verbose unbuild node_modules/.staging/socket.io-74215839
+774 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/socket.io-74215839 is being purged from base /home/raffdevs/Devs Directory/JS/Projects/whats_forip
+775 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/socket.io-74215839
+776 verbose tar unpack /home/raffdevs/.npm/socket.io/2.3.0/package.tgz
+777 verbose tar unpacking to /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/socket.io-74215839
+778 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/socket.io-74215839 is being purged
+779 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/socket.io-74215839
+780 silly gunzTarPerm modes [ '755', '644' ]
+781 silly gunzTarPerm extractEntry test/test-app/controllers/three.js
+782 silly gunzTarPerm extractEntry test/test-app/controllers/two.js
+783 silly gunzTarPerm extractEntry lib/WebSocketTransport.d.ts.map
+784 silly gunzTarPerm extractEntry lib/WebWorker.d.ts.map
+785 silly gunzTarPerm extractEntry package.json
+786 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+787 silly gunzTarPerm extractEntry README.md
+788 silly gunzTarPerm extractEntry lib/Accessibility.d.ts
+789 http 304 https://registry.npmjs.org/express-validator
+790 verbose headers { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+790 verbose headers   connection: 'keep-alive',
+790 verbose headers   'set-cookie':
+790 verbose headers    [ '__cfduid=d6332fef17b82476807cdf15a25a093631595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+790 verbose headers   'cf-ray': '5b4dff17eae4f6c7-GRU',
+790 verbose headers   age: '278',
+790 verbose headers   'cache-control': 'public, max-age=300',
+790 verbose headers   etag: '"ca59da39ffc09ae958375a106be22f15"',
+790 verbose headers   'last-modified': 'Sun, 21 Jun 2020 14:42:19 GMT',
+790 verbose headers   vary: 'Accept-Encoding',
+790 verbose headers   'cf-cache-status': 'HIT',
+790 verbose headers   'cf-request-id': '04049dc2f00000f6c7d2900200000001',
+790 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+790 verbose headers   server: 'cloudflare' }
+791 silly get cb [ 304,
+791 silly get   { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+791 silly get     connection: 'keep-alive',
+791 silly get     'set-cookie':
+791 silly get      [ '__cfduid=d6332fef17b82476807cdf15a25a093631595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+791 silly get     'cf-ray': '5b4dff17eae4f6c7-GRU',
+791 silly get     age: '278',
+791 silly get     'cache-control': 'public, max-age=300',
+791 silly get     etag: '"ca59da39ffc09ae958375a106be22f15"',
+791 silly get     'last-modified': 'Sun, 21 Jun 2020 14:42:19 GMT',
+791 silly get     vary: 'Accept-Encoding',
+791 silly get     'cf-cache-status': 'HIT',
+791 silly get     'cf-request-id': '04049dc2f00000f6c7d2900200000001',
+791 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+791 silly get     server: 'cloudflare' } ]
+792 verbose etag https://registry.npmjs.org/express-validator from cache
+793 verbose get saving express-validator to /home/raffdevs/.npm/registry.npmjs.org/express-validator/.cache.json
+794 silly gunzTarPerm extractEntry LICENSE
+795 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+796 silly gunzTarPerm extractEntry Readme.md
+797 silly gunzTarPerm modified mode [ 'Readme.md', 436, 420 ]
+798 silly gunzTarPerm extractEntry test/test-app/models/one.js
+799 silly gunzTarPerm extractEntry test/test-app/models/three.js
+800 silly gunzTarPerm extractEntry lib/api-docs-entry.d.ts
+801 silly gunzTarPerm extractEntry lib/api.d.ts
+802 silly gunzTarPerm extractEntry lib/client.js
+803 silly gunzTarPerm modified mode [ 'lib/client.js', 436, 420 ]
+804 silly gunzTarPerm extractEntry test/test-app/models/two.js
+805 silly gunzTarPerm extractEntry lib/consign.js
+806 silly mapToRegistry name express-validator
+807 silly mapToRegistry using default registry
+808 silly mapToRegistry registry https://registry.npmjs.org/
+809 silly mapToRegistry uri https://registry.npmjs.org/express-validator
+810 verbose addRemoteTarball https://registry.npmjs.org/express-validator/-/express-validator-5.3.0.tgz not in flight; adding
+811 verbose addRemoteTarball [ 'https://registry.npmjs.org/express-validator/-/express-validator-5.3.0.tgz',
+811 verbose addRemoteTarball   '18a4e4a6e6410e3b9d492fb4ffcb4556fec51806' ]
+812 info retry fetch attempt 1 at 14:41:57
+813 info attempt registry request try #1 at 14:41:57
+814 http fetch GET https://registry.npmjs.org/express-validator/-/express-validator-5.3.0.tgz
+815 silly gunzTarPerm extractEntry lib/Browser.d.ts
+816 silly gunzTarPerm extractEntry lib/BrowserFetcher.d.ts
+817 silly gunzTarPerm extractEntry lib/index.js
+818 silly gunzTarPerm modified mode [ 'lib/index.js', 436, 420 ]
+819 silly gunzTarPerm extractEntry lib/namespace.js
+820 silly gunzTarPerm modified mode [ 'lib/namespace.js', 436, 420 ]
+821 silly gunzTarPerm extractEntry locale/en-au.json
+822 silly gunzTarPerm extractEntry locale/en-nz.json
+823 http fetch 200 https://registry.npmjs.org/express/-/express-4.17.1.tgz
+824 http fetch 200 https://registry.npmjs.org/pg/-/pg-8.2.1.tgz
+825 silly gunzTarPerm extractEntry lib/parent-namespace.js
+826 silly gunzTarPerm modified mode [ 'lib/parent-namespace.js', 436, 420 ]
+827 silly gunzTarPerm extractEntry lib/socket.js
+828 silly gunzTarPerm modified mode [ 'lib/socket.js', 436, 420 ]
+829 http fetch 200 https://registry.npmjs.org/ejs/-/ejs-3.1.3.tgz
+830 silly gunzTarPerm extractEntry lib/launcher/BrowserRunner.d.ts
+831 silly gunzTarPerm extractEntry lib/Connection.d.ts
+832 silly gunzTarPerm extractEntry locale/en-us.json
+833 silly gunzTarPerm extractEntry locale/fr-fr.json
+834 silly fetchAndShaCheck shasum f5a81f5e2025182fbe701514d3e1a43e68a616ac
+835 silly fetchAndShaCheck shasum 4491fc38605cf51f8629d39c2b5d026f98a4c134
+836 verbose addTmpTarball /tmp/npm-27100-aec96dc2/registry.npmjs.org/pg/-/pg-8.2.1.tgz not in flight; adding
+837 verbose addTmpTarball already have metadata; skipping unpack for pg@8.2.1
+838 verbose addTmpTarball /tmp/npm-27100-aec96dc2/registry.npmjs.org/express/-/express-4.17.1.tgz not in flight; adding
+839 verbose addTmpTarball already have metadata; skipping unpack for express@4.17.1
+840 silly fetchAndShaCheck shasum 514d967a8894084d18d3d47bd169a1c0560f093d
+841 http fetch 200 https://registry.npmjs.org/cheerio/-/cheerio-1.0.0-rc.3.tgz
+842 silly gunzTarPerm extractEntry lib/ConnectionTransport.d.ts
+843 silly gunzTarPerm extractEntry lib/ConsoleMessage.d.ts
+844 silly gunzTarPerm extractEntry locale/pl.json
+845 silly gunzTarPerm extractEntry locale/pt-br.json
+846 verbose addTmpTarball /tmp/npm-27100-aec96dc2/registry.npmjs.org/ejs/-/ejs-3.1.3.tgz not in flight; adding
+847 verbose addTmpTarball already have metadata; skipping unpack for ejs@3.1.3
+848 silly fetchAndShaCheck shasum 094636d425b2e9c0f4eb91a46c05630c9a1a8bf6
+849 verbose addTmpTarball /tmp/npm-27100-aec96dc2/registry.npmjs.org/cheerio/-/cheerio-1.0.0-rc.3.tgz not in flight; adding
+850 verbose addTmpTarball already have metadata; skipping unpack for cheerio@1.0.0-rc.3
+851 silly gunzTarPerm extractEntry lib/Coverage.d.ts
+852 silly gunzTarPerm extractEntry lib/DeviceDescriptors.d.ts
+853 verbose unbuild node_modules/.staging/pg-f55e0b13
+854 verbose unbuild node_modules/.staging/express-0148151b
+855 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/pg-f55e0b13 is being purged from base /home/raffdevs/Devs Directory/JS/Projects/whats_forip
+856 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/pg-f55e0b13
+857 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-0148151b is being purged from base /home/raffdevs/Devs Directory/JS/Projects/whats_forip
+858 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-0148151b
+859 verbose tar unpack /home/raffdevs/.npm/pg/8.2.1/package.tgz
+860 verbose tar unpacking to /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/pg-f55e0b13
+861 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/pg-f55e0b13 is being purged
+862 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/pg-f55e0b13
+863 silly gunzTarPerm extractEntry locale/zh-cn.json
+864 silly gunzTarPerm extractEntry .travis.yml
+865 verbose tar unpack /home/raffdevs/.npm/express/4.17.1/package.tgz
+866 verbose tar unpacking to /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-0148151b
+867 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-0148151b is being purged
+868 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-0148151b
+869 silly gunzTarPerm modes [ '755', '644' ]
+870 silly gunzTarPerm modes [ '755', '644' ]
+871 verbose unbuild node_modules/.staging/ejs-0202180b
+872 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ejs-0202180b is being purged from base /home/raffdevs/Devs Directory/JS/Projects/whats_forip
+873 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ejs-0202180b
+874 silly gunzTarPerm extractEntry lib/Dialog.d.ts
+875 silly gunzTarPerm extractEntry lib/DOMWorld.d.ts
+876 silly gunzTarPerm extractEntry lib/EmulationManager.d.ts
+877 verbose tar unpack /home/raffdevs/.npm/ejs/3.1.3/package.tgz
+878 verbose tar unpacking to /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ejs-0202180b
+879 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ejs-0202180b is being purged
+880 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ejs-0202180b
+881 silly gunzTarPerm extractEntry LICENSE
+882 silly gunzTarPerm modes [ '755', '644' ]
+883 silly gunzTarPerm extractEntry package.json
+884 silly gunzTarPerm extractEntry lib/Errors.d.ts
+885 verbose unbuild node_modules/.staging/cheerio-e87f0f81
+886 silly gunzTarPerm extractEntry examples/express/app.js
+887 silly gunzTarPerm extractEntry examples/express/api/middleware/application.js
+888 silly gunzTarPerm extractEntry lib/client.js
+889 silly gunzTarPerm extractEntry lib/native/client.js
+890 silly gunzTarPerm extractEntry lib/connection-parameters.js
+891 silly gunzTarPerm extractEntry lib/connection.js
+892 silly gunzTarPerm extractEntry lib/defaults.js
+893 silly gunzTarPerm extractEntry lib/index.js
+894 silly gunzTarPerm extractEntry lib/native/index.js
+895 silly gunzTarPerm extractEntry lib/native/query.js
+896 silly gunzTarPerm extractEntry lib/query.js
+897 silly gunzTarPerm extractEntry lib/result.js
+898 silly gunzTarPerm extractEntry lib/sasl.js
+899 silly gunzTarPerm extractEntry lib/type-overrides.js
+900 silly gunzTarPerm extractEntry lib/utils.js
+901 silly gunzTarPerm extractEntry package.json
+902 silly gunzTarPerm extractEntry README.md
+903 silly gunzTarPerm extractEntry History.md
+904 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/cheerio-e87f0f81 is being purged from base /home/raffdevs/Devs Directory/JS/Projects/whats_forip
+905 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/cheerio-e87f0f81
+906 silly gunzTarPerm extractEntry index.js
+907 verbose tar unpack /home/raffdevs/.npm/cheerio/1.0.0-rc.3/package.tgz
+908 verbose tar unpacking to /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/cheerio-e87f0f81
+909 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/cheerio-e87f0f81 is being purged
+910 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/cheerio-e87f0f81
+911 silly gunzTarPerm extractEntry
+912 silly gunzTarPerm modes [ '755', '644' ]
+913 silly gunzTarPerm extractEntry lib/EventEmitter.d.ts
+914 silly gunzTarPerm extractEntry lib/Events.d.ts
+915 silly gunzTarPerm extractEntry examples/express/api/middleware/user.js
+916 silly gunzTarPerm extractEntry examples/express/api/models/user.js
+917 silly gunzTarPerm extractEntry LICENSE
+918 silly gunzTarPerm extractEntry bin/
+919 silly gunzTarPerm extractEntry postinstall.js
+920 silly gunzTarPerm extractEntry package.json
+921 silly gunzTarPerm extractEntry LICENSE
+922 silly gunzTarPerm extractEntry Readme.md
+923 silly gunzTarPerm extractEntry lib/application.js
+924 silly gunzTarPerm extractEntry ejs.js
+925 silly gunzTarPerm extractEntry README.md
+926 silly gunzTarPerm extractEntry jakefile.js
+927 silly gunzTarPerm extractEntry package.json
+928 silly gunzTarPerm extractEntry lib/
+929 silly gunzTarPerm extractEntry ejs.min.js
+930 silly gunzTarPerm extractEntry usage.txt
+931 silly gunzTarPerm extractEntry lib/ejs.js
+932 silly gunzTarPerm extractEntry lib/utils.js
+933 silly gunzTarPerm extractEntry bin/cli.js
+934 silly gunzTarPerm extractEntry History.md
+935 http fetch 200 https://registry.npmjs.org/express-validator/-/express-validator-5.3.0.tgz
+936 silly gunzTarPerm extractEntry lib/express.js
+937 silly gunzTarPerm extractEntry lib/ExecutionContext.d.ts
+938 silly gunzTarPerm extractEntry lib/FileChooser.d.ts
+939 silly gunzTarPerm extractEntry index.js
+940 silly gunzTarPerm extractEntry examples/express/api/routers/user.js
+941 silly gunzTarPerm extractEntry examples/middleware-chain/app.js
+942 silly gunzTarPerm extractEntry lib/middleware/init.js
+943 silly gunzTarPerm extractEntry lib/middleware/query.js
+944 silly gunzTarPerm extractEntry lib/request.js
+945 silly fetchAndShaCheck shasum 18a4e4a6e6410e3b9d492fb4ffcb4556fec51806
+946 silly gunzTarPerm extractEntry lib/response.js
+947 silly gunzTarPerm extractEntry LICENSE
+948 silly gunzTarPerm extractEntry Readme.md
+949 silly gunzTarPerm extractEntry lib/api/attributes.js
+950 silly gunzTarPerm extractEntry lib/FrameManager.d.ts
+951 silly gunzTarPerm extractEntry lib/helper.d.ts
+952 silly gunzTarPerm extractEntry examples/middleware-chain/middleware/one.js
+953 silly gunzTarPerm extractEntry examples/middleware-chain/middleware/three.js
+954 silly gunzTarPerm extractEntry lib/api/css.js
+955 verbose addTmpTarball /tmp/npm-27100-aec96dc2/registry.npmjs.org/express-validator/-/express-validator-5.3.0.tgz not in flight; adding
+956 verbose addTmpTarball already have metadata; skipping unpack for express-validator@5.3.0
+957 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/socket.io-74215839/node_modules is being purged
+958 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/socket.io-74215839/node_modules
+959 silly gunzTarPerm extractEntry lib/router/index.js
+960 silly gunzTarPerm extractEntry lib/router/layer.js
+961 silly gunzTarPerm extractEntry lib/HTTPRequest.d.ts
+962 silly gunzTarPerm extractEntry lib/HTTPResponse.d.ts
+963 silly gunzTarPerm extractEntry examples/middleware-chain/middleware/two.js
+964 silly gunzTarPerm extractEntry examples/mvc/app.js
+965 silly gunzTarPerm extractEntry lib/api/forms.js
+966 silly gunzTarPerm extractEntry lib/api/manipulation.js
+967 verbose unbuild node_modules/.staging/express-validator-2cc1343b
+968 silly gunzTarPerm extractEntry lib/router/route.js
+969 silly gunzTarPerm extractEntry lib/utils.js
+970 silly gunzTarPerm extractEntry examples/mvc/controllers/user.js
+971 silly gunzTarPerm extractEntry examples/mvc/models/user.js
+972 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-validator-2cc1343b is being purged from base /home/raffdevs/Devs Directory/JS/Projects/whats_forip
+973 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-validator-2cc1343b
+974 silly gunzTarPerm extractEntry lib/index.d.ts
+975 silly gunzTarPerm extractEntry lib/Input.d.ts
+976 verbose tar unpack /home/raffdevs/.npm/express-validator/5.3.0/package.tgz
+977 verbose tar unpacking to /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-validator-2cc1343b
+978 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-validator-2cc1343b is being purged
+979 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-validator-2cc1343b
+980 silly gunzTarPerm extractEntry lib/api/traversing.js
+981 silly gunzTarPerm extractEntry lib/cheerio.js
+982 silly gunzTarPerm modes [ '755', '644' ]
+983 silly gunzTarPerm extractEntry lib/view.js
+984 silly gunzTarPerm extractEntry package.json
+985 silly gunzTarPerm extractEntry lib/JSHandle.d.ts
+986 silly gunzTarPerm extractEntry lib/Launcher.d.ts
+987 silly gunzTarPerm extractEntry lib/options.js
+988 silly gunzTarPerm extractEntry lib/parse.js
+989 silly gunzTarPerm extractEntry lib/static.js
+990 silly gunzTarPerm extractEntry CONTRIBUTING.md
+991 silly gunzTarPerm extractEntry index.d.ts
+992 silly gunzTarPerm extractEntry lib/utils.js
+993 silly gunzTarPerm extractEntry lib/launcher/LaunchOptions.d.ts
+994 silly gunzTarPerm extractEntry lib/LifecycleWatcher.d.ts
+995 silly gunzTarPerm extractEntry index.js
+996 silly gunzTarPerm extractEntry LICENSE
+997 silly gunzTarPerm extractEntry lib/NetworkManager.d.ts
+998 silly gunzTarPerm extractEntry lib/Page.d.ts
+999 silly gunzTarPerm extractEntry README.md
+1000 silly gunzTarPerm extractEntry tsconfig.json
+1001 silly gunzTarPerm extractEntry lib/PipeTransport.d.ts
+1002 silly gunzTarPerm extractEntry lib/protocol.d.ts
+1003 silly gunzTarPerm extractEntry tst.js
+1004 silly gunzTarPerm extractEntry UPGRADE_GUIDE.md
+1005 silly gunzTarPerm extractEntry check/check.d.ts
+1006 silly gunzTarPerm extractEntry lib/Puppeteer.d.ts
+1007 silly gunzTarPerm extractEntry lib/PuppeteerViewport.d.ts
+1008 silly gunzTarPerm extractEntry lib/QueryHandler.d.ts
+1009 silly gunzTarPerm extractEntry check/check.js
+1010 silly gunzTarPerm extractEntry check/index.d.ts
+1011 silly gunzTarPerm extractEntry lib/SecurityDetails.d.ts
+1012 silly gunzTarPerm extractEntry lib/Target.d.ts
+1013 silly gunzTarPerm extractEntry check/index.js
+1014 silly gunzTarPerm extractEntry check/location.d.ts
+1015 silly gunzTarPerm extractEntry lib/TimeoutSettings.d.ts
+1016 silly gunzTarPerm extractEntry lib/Tracing.d.ts
+1017 silly gunzTarPerm extractEntry check/one-of.d.ts
+1018 silly gunzTarPerm extractEntry check/one-of.js
+1019 silly gunzTarPerm extractEntry lib/USKeyboardLayout.d.ts
+1020 silly gunzTarPerm extractEntry lib/WebSocketTransport.d.ts
+1021 silly gunzTarPerm extractEntry check/runner.js
+1022 silly gunzTarPerm extractEntry check/schema.d.ts
+1023 silly gunzTarPerm extractEntry lib/WebWorker.d.ts
+1024 silly gunzTarPerm extractEntry check/schema.js
+1025 silly gunzTarPerm extractEntry check/validation-chain-builders.d.ts
+1026 silly gunzTarPerm extractEntry check/validation-chain-builders.js
+1027 silly gunzTarPerm extractEntry check/validation-result.d.ts
+1028 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ejs-0202180b/node_modules is being purged
+1029 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ejs-0202180b/node_modules
+1030 silly gunzTarPerm extractEntry check/validation-result.js
+1031 silly gunzTarPerm extractEntry docs/api-check.md
+1032 silly gunzTarPerm extractEntry docs/api-filter.md
+1033 silly gunzTarPerm extractEntry docs/api-legacy.md
+1034 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/pg-f55e0b13/node_modules is being purged
+1035 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/pg-f55e0b13/node_modules
+1036 silly gunzTarPerm extractEntry docs/api-sanitization-chain.md
+1037 silly gunzTarPerm extractEntry docs/api-validation-chain.md
+1038 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/cheerio-e87f0f81/node_modules is being purged
+1039 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/cheerio-e87f0f81/node_modules
+1040 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-0148151b/node_modules is being purged
+1041 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-0148151b/node_modules
+1042 silly gunzTarPerm extractEntry docs/api-validation-result.md
+1043 silly gunzTarPerm extractEntry docs/feature-custom-validators-sanitizers.md
+1044 silly gunzTarPerm extractEntry docs/feature-error-messages.md
+1045 silly gunzTarPerm extractEntry docs/feature-sanitization.md
+1046 silly gunzTarPerm extractEntry docs/feature-schema-validation.md
+1047 silly gunzTarPerm extractEntry docs/feature-whole-body-validation.md
+1048 silly gunzTarPerm extractEntry docs/feature-wildcards.md
+1049 silly gunzTarPerm extractEntry docs/index.md
+1050 silly gunzTarPerm extractEntry filter/index.d.ts
+1051 silly gunzTarPerm extractEntry filter/index.js
+1052 silly gunzTarPerm extractEntry filter/matched-data.d.ts
+1053 silly gunzTarPerm extractEntry filter/matched-data.js
+1054 silly gunzTarPerm extractEntry filter/sanitization-chain-builders.d.ts
+1055 silly gunzTarPerm extractEntry filter/sanitization-chain-builders.js
+1056 silly gunzTarPerm extractEntry filter/sanitize.d.ts
+1057 silly gunzTarPerm extractEntry filter/sanitize.js
+1058 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/consign-397ab5e3/node_modules is being purged
+1059 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/consign-397ab5e3/node_modules
+1060 silly gunzTarPerm extractEntry lib/chain-creator.js
+1061 silly gunzTarPerm extractEntry lib/custom-methods.js
+1062 silly gunzTarPerm extractEntry lib/express_validator.js
+1063 silly gunzTarPerm extractEntry lib/legacy-runner.js
+1064 silly gunzTarPerm extractEntry lib/utils.js
+1065 silly gunzTarPerm extractEntry utils/constants.js
+1066 silly gunzTarPerm extractEntry utils/filters.js
+1067 silly gunzTarPerm extractEntry utils/format-param-output.js
+1068 silly gunzTarPerm extractEntry utils/persist-values.js
+1069 silly gunzTarPerm extractEntry utils/select-fields.js
+1070 silly gunzTarPerm extractEntry utils/to-string.js
+1071 silly gunzTarPerm extractEntry website/core/Footer.js
+1072 silly gunzTarPerm extractEntry website/i18n/en.json
+1073 silly gunzTarPerm extractEntry website/package.json
+1074 silly gunzTarPerm extractEntry website/pages/en/versions.js
+1075 silly gunzTarPerm extractEntry website/sidebars.json
+1076 silly gunzTarPerm extractEntry website/siteConfig.js
+1077 silly gunzTarPerm extractEntry website/static/css/custom.css
+1078 silly gunzTarPerm extractEntry website/static/img/favicon.png
+1079 silly gunzTarPerm extractEntry website/static/img/favicon/favicon.ico
+1080 silly gunzTarPerm extractEntry website/static/img/logo.svg
+1081 silly gunzTarPerm extractEntry website/static/index.html
+1082 silly gunzTarPerm extractEntry website/versioned_docs/version-5.2.0/api-check.md
+1083 silly gunzTarPerm extractEntry website/versioned_docs/version-5.2.0/api-filter.md
+1084 silly gunzTarPerm extractEntry website/versioned_docs/version-5.2.0/api-legacy.md
+1085 silly gunzTarPerm extractEntry website/versioned_docs/version-5.2.0/api-sanitization-chain.md
+1086 silly gunzTarPerm extractEntry website/versioned_docs/version-5.2.0/api-validation-chain.md
+1087 silly gunzTarPerm extractEntry website/versioned_docs/version-5.2.0/api-validation-result.md
+1088 silly gunzTarPerm extractEntry website/versioned_docs/version-5.2.0/feature-custom-validators-sanitizers.md
+1089 silly gunzTarPerm extractEntry website/versioned_docs/version-5.2.0/feature-error-messages.md
+1090 silly gunzTarPerm extractEntry website/versioned_docs/version-5.2.0/feature-sanitization.md
+1091 silly gunzTarPerm extractEntry website/versioned_docs/version-5.2.0/feature-schema-validation.md
+1092 silly gunzTarPerm extractEntry website/versioned_docs/version-5.2.0/feature-whole-body-validation.md
+1093 silly gunzTarPerm extractEntry website/versioned_docs/version-5.2.0/feature-wildcards.md
+1094 silly gunzTarPerm extractEntry website/versioned_docs/version-5.2.0/index.md
+1095 silly gunzTarPerm extractEntry website/versioned_docs/version-5.3.0/api-filter.md
+1096 silly gunzTarPerm extractEntry website/versioned_docs/version-5.3.0/api-validation-chain.md
+1097 silly gunzTarPerm extractEntry website/versioned_docs/version-5.3.0/feature-custom-validators-sanitizers.md
+1098 silly gunzTarPerm extractEntry website/versioned_sidebars/version-5.2.0-sidebars.json
+1099 silly gunzTarPerm extractEntry website/versions.json
+1100 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-validator-2cc1343b/node_modules is being purged
+1101 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-validator-2cc1343b/node_modules
+1102 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/puppeteer-e7cd6fbc/node_modules is being purged
+1103 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/puppeteer-e7cd6fbc/node_modules
+1104 http 304 https://registry.npmjs.org/sleep
+1105 verbose headers { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+1105 verbose headers   connection: 'keep-alive',
+1105 verbose headers   'set-cookie':
+1105 verbose headers    [ '__cfduid=da5d9177b695eb1c5f17cf6a3fed45cd81595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+1105 verbose headers   'cf-ray': '5b4dff17ef68f617-GRU',
+1105 verbose headers   'cache-control': 'public, max-age=300',
+1105 verbose headers   etag: '"2e502934c8e99e95d444fd5ffe1f46f6"',
+1105 verbose headers   'last-modified': 'Mon, 13 Jul 2020 11:24:07 GMT',
+1105 verbose headers   vary: 'Accept-Encoding',
+1105 verbose headers   'cf-cache-status': 'REVALIDATED',
+1105 verbose headers   'cf-request-id': '04049dc2f20000f617a880a200000001',
+1105 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1105 verbose headers   server: 'cloudflare' }
+1106 silly get cb [ 304,
+1106 silly get   { date: 'Sat, 18 Jul 2020 17:41:57 GMT',
+1106 silly get     connection: 'keep-alive',
+1106 silly get     'set-cookie':
+1106 silly get      [ '__cfduid=da5d9177b695eb1c5f17cf6a3fed45cd81595094117; expires=Mon, 17-Aug-20 17:41:57 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+1106 silly get     'cf-ray': '5b4dff17ef68f617-GRU',
+1106 silly get     'cache-control': 'public, max-age=300',
+1106 silly get     etag: '"2e502934c8e99e95d444fd5ffe1f46f6"',
+1106 silly get     'last-modified': 'Mon, 13 Jul 2020 11:24:07 GMT',
+1106 silly get     vary: 'Accept-Encoding',
+1106 silly get     'cf-cache-status': 'REVALIDATED',
+1106 silly get     'cf-request-id': '04049dc2f20000f617a880a200000001',
+1106 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1106 silly get     server: 'cloudflare' } ]
+1107 verbose etag https://registry.npmjs.org/sleep from cache
+1108 verbose get saving sleep to /home/raffdevs/.npm/registry.npmjs.org/sleep/.cache.json
+1109 silly mapToRegistry name sleep
+1110 silly mapToRegistry using default registry
+1111 silly mapToRegistry registry https://registry.npmjs.org/
+1112 silly mapToRegistry uri https://registry.npmjs.org/sleep
+1113 verbose addRemoteTarball https://registry.npmjs.org/sleep/-/sleep-6.2.0.tgz not in flight; adding
+1114 verbose addRemoteTarball [ 'https://registry.npmjs.org/sleep/-/sleep-6.2.0.tgz',
+1114 verbose addRemoteTarball   '88029df49529b8aa3ea5b5a510d44921101579e5' ]
+1115 info retry fetch attempt 1 at 14:41:58
+1116 info attempt registry request try #1 at 14:41:58
+1117 http fetch GET https://registry.npmjs.org/sleep/-/sleep-6.2.0.tgz
+1118 http fetch 200 https://registry.npmjs.org/sleep/-/sleep-6.2.0.tgz
+1119 silly fetchAndShaCheck shasum 88029df49529b8aa3ea5b5a510d44921101579e5
+1120 verbose addTmpTarball /tmp/npm-27100-aec96dc2/registry.npmjs.org/sleep/-/sleep-6.2.0.tgz not in flight; adding
+1121 verbose addTmpTarball already have metadata; skipping unpack for sleep@6.2.0
+1122 verbose unbuild node_modules/.staging/sleep-283bf01d
+1123 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/sleep-283bf01d is being purged from base /home/raffdevs/Devs Directory/JS/Projects/whats_forip
+1124 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/sleep-283bf01d
+1125 verbose tar unpack /home/raffdevs/.npm/sleep/6.2.0/package.tgz
+1126 verbose tar unpacking to /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/sleep-283bf01d
+1127 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/sleep-283bf01d is being purged
+1128 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/sleep-283bf01d
+1129 silly gunzTarPerm modes [ '755', '644' ]
+1130 silly gunzTarPerm extractEntry module_init.cc
+1131 silly gunzTarPerm modified mode [ 'module_init.cc', 436, 420 ]
+1132 silly gunzTarPerm extractEntry sleep_cpp11.cc
+1133 silly gunzTarPerm modified mode [ 'sleep_cpp11.cc', 436, 420 ]
+1134 silly gunzTarPerm extractEntry sleep_posix.cc
+1135 silly gunzTarPerm modified mode [ 'sleep_posix.cc', 436, 420 ]
+1136 silly gunzTarPerm extractEntry sleep_win.cc
+1137 silly gunzTarPerm modified mode [ 'sleep_win.cc', 436, 420 ]
+1138 silly gunzTarPerm extractEntry binding.gyp
+1139 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 420 ]
+1140 silly gunzTarPerm extractEntry sleep.h
+1141 silly gunzTarPerm modified mode [ 'sleep.h', 436, 420 ]
+1142 silly gunzTarPerm extractEntry index.js
+1143 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+1144 silly gunzTarPerm extractEntry test.js
+1145 silly gunzTarPerm modified mode [ 'test.js', 436, 420 ]
+1146 silly gunzTarPerm extractEntry package.json
+1147 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+1148 silly gunzTarPerm extractEntry README.md
+1149 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+1150 silly gunzTarPerm extractEntry LICENSE.txt
+1151 silly gunzTarPerm modified mode [ 'LICENSE.txt', 436, 420 ]
+1152 silly gunzTarPerm extractEntry .travis.yml
+1153 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+1154 silly gunzTarPerm extractEntry appveyor.yml
+1155 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+1156 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/sleep-283bf01d/node_modules is being purged
+1157 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/sleep-283bf01d/node_modules
+1158 silly doParallel preinstall 13
+1159 silly preinstall body-parser@1.19.0 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/body-parser-af57398b
+1160 info lifecycle body-parser@1.19.0~preinstall: body-parser@1.19.0
+1161 silly preinstall mime@2.4.6 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/mime-b5139334
+1162 info lifecycle mime@2.4.6~preinstall: mime@2.4.6
+1163 silly preinstall ms@2.1.2 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ms-cb48e9a3
+1164 info lifecycle ms@2.1.2~preinstall: ms@2.1.2
+1165 silly preinstall debug@4.1.1 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/debug-be3e4e3b
+1166 info lifecycle debug@4.1.1~preinstall: debug@4.1.1
+1167 silly preinstall cheerio@1.0.0-rc.3 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/cheerio-e87f0f81
+1168 info lifecycle cheerio@1.0.0-rc.3~preinstall: cheerio@1.0.0-rc.3
+1169 silly preinstall consign@0.1.6 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/consign-397ab5e3
+1170 info lifecycle consign@0.1.6~preinstall: consign@0.1.6
+1171 silly preinstall ejs@3.1.3 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ejs-0202180b
+1172 info lifecycle ejs@3.1.3~preinstall: ejs@3.1.3
+1173 silly preinstall express@4.17.1 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-0148151b
+1174 info lifecycle express@4.17.1~preinstall: express@4.17.1
+1175 silly preinstall express-validator@5.3.0 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-validator-2cc1343b
+1176 info lifecycle express-validator@5.3.0~preinstall: express-validator@5.3.0
+1177 silly preinstall pg@8.2.1 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/pg-f55e0b13
+1178 info lifecycle pg@8.2.1~preinstall: pg@8.2.1
+1179 silly preinstall puppeteer@4.0.1 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/puppeteer-e7cd6fbc
+1180 info lifecycle puppeteer@4.0.1~preinstall: puppeteer@4.0.1
+1181 silly preinstall sleep@6.2.0 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/sleep-283bf01d
+1182 info lifecycle sleep@6.2.0~preinstall: sleep@6.2.0
+1183 silly preinstall socket.io@2.3.0 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/socket.io-74215839
+1184 info lifecycle socket.io@2.3.0~preinstall: socket.io@2.3.0
+1185 silly lifecycle body-parser@1.19.0~preinstall: no script for preinstall, continuing
+1186 silly lifecycle mime@2.4.6~preinstall: no script for preinstall, continuing
+1187 silly lifecycle ms@2.1.2~preinstall: no script for preinstall, continuing
+1188 silly lifecycle debug@4.1.1~preinstall: no script for preinstall, continuing
+1189 silly lifecycle cheerio@1.0.0-rc.3~preinstall: no script for preinstall, continuing
+1190 silly lifecycle consign@0.1.6~preinstall: no script for preinstall, continuing
+1191 silly lifecycle ejs@3.1.3~preinstall: no script for preinstall, continuing
+1192 silly lifecycle express@4.17.1~preinstall: no script for preinstall, continuing
+1193 silly lifecycle pg@8.2.1~preinstall: no script for preinstall, continuing
+1194 silly lifecycle express-validator@5.3.0~preinstall: no script for preinstall, continuing
+1195 silly lifecycle puppeteer@4.0.1~preinstall: no script for preinstall, continuing
+1196 silly lifecycle sleep@6.2.0~preinstall: no script for preinstall, continuing
+1197 silly lifecycle socket.io@2.3.0~preinstall: no script for preinstall, continuing
+1198 silly doReverseSerial remove 0
+1199 silly doSerial move 0
+1200 silly doSerial finalize 13
+1201 silly finalize /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/body-parser
+1202 silly finalize /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/puppeteer/node_modules/mime
+1203 silly finalize /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/puppeteer/node_modules/ms
+1204 silly finalize /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/puppeteer/node_modules/debug
+1205 silly finalize /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/cheerio
+1206 silly finalize /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/consign
+1207 silly finalize /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/ejs
+1208 silly finalize /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/express
+1209 silly finalize /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/express-validator
+1210 silly finalize /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/pg
+1211 silly finalize /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/puppeteer
+1212 silly finalize /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/sleep
+1213 silly finalize /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/socket.io
+1214 silly doSerial build 13
+1215 silly build body-parser@1.19.0
+1216 info linkStuff body-parser@1.19.0
+1217 silly linkStuff body-parser@1.19.0 has /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules as its parent node_modules
+1218 verbose linkBins body-parser@1.19.0
+1219 verbose linkMans body-parser@1.19.0
+1220 silly build mime@2.4.6
+1221 info linkStuff mime@2.4.6
+1222 silly linkStuff mime@2.4.6 has /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/puppeteer/node_modules as its parent node_modules
+1223 verbose linkBins mime@2.4.6
+1224 verbose link bins [ { mime: 'cli.js' },
+1224 verbose link bins   '/home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/puppeteer/node_modules/.bin',
+1224 verbose link bins   false ]
+1225 verbose linkMans mime@2.4.6
+1226 silly gentlyRm /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/puppeteer/node_modules/.bin/mime is being purged
+1227 verbose gentlyRm don't care about contents; nuking /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/puppeteer/node_modules/.bin/mime
+1228 silly build ms@2.1.2
+1229 info linkStuff ms@2.1.2
+1230 silly linkStuff ms@2.1.2 has /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/puppeteer/node_modules as its parent node_modules
+1231 verbose linkBins ms@2.1.2
+1232 verbose linkMans ms@2.1.2
+1233 silly build debug@4.1.1
+1234 info linkStuff debug@4.1.1
+1235 silly linkStuff debug@4.1.1 has /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/puppeteer/node_modules as its parent node_modules
+1236 verbose linkBins debug@4.1.1
+1237 verbose linkMans debug@4.1.1
+1238 silly build cheerio@1.0.0-rc.3
+1239 info linkStuff cheerio@1.0.0-rc.3
+1240 silly linkStuff cheerio@1.0.0-rc.3 has /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules as its parent node_modules
+1241 verbose linkBins cheerio@1.0.0-rc.3
+1242 verbose linkMans cheerio@1.0.0-rc.3
+1243 silly build consign@0.1.6
+1244 info linkStuff consign@0.1.6
+1245 silly linkStuff consign@0.1.6 has /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules as its parent node_modules
+1246 verbose linkBins consign@0.1.6
+1247 verbose linkMans consign@0.1.6
+1248 silly build ejs@3.1.3
+1249 info linkStuff ejs@3.1.3
+1250 silly linkStuff ejs@3.1.3 has /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules as its parent node_modules
+1251 verbose linkBins ejs@3.1.3
+1252 verbose link bins [ { ejs: 'bin/cli.js' },
+1252 verbose link bins   '/home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.bin',
+1252 verbose link bins   false ]
+1253 verbose linkMans ejs@3.1.3
+1254 silly build express@4.17.1
+1255 info linkStuff express@4.17.1
+1256 silly linkStuff express@4.17.1 has /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules as its parent node_modules
+1257 verbose linkBins express@4.17.1
+1258 verbose linkMans express@4.17.1
+1259 silly build express-validator@5.3.0
+1260 info linkStuff express-validator@5.3.0
+1261 silly linkStuff express-validator@5.3.0 has /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules as its parent node_modules
+1262 verbose linkBins express-validator@5.3.0
+1263 verbose linkMans express-validator@5.3.0
+1264 silly build pg@8.2.1
+1265 info linkStuff pg@8.2.1
+1266 silly linkStuff pg@8.2.1 has /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules as its parent node_modules
+1267 verbose linkBins pg@8.2.1
+1268 verbose linkMans pg@8.2.1
+1269 silly build puppeteer@4.0.1
+1270 info linkStuff puppeteer@4.0.1
+1271 silly linkStuff puppeteer@4.0.1 has /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules as its parent node_modules
+1272 verbose linkBins puppeteer@4.0.1
+1273 verbose linkMans puppeteer@4.0.1
+1274 silly build sleep@6.2.0
+1275 info linkStuff sleep@6.2.0
+1276 silly linkStuff sleep@6.2.0 has /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules as its parent node_modules
+1277 verbose linkBins sleep@6.2.0
+1278 verbose linkMans sleep@6.2.0
+1279 silly build socket.io@2.3.0
+1280 info linkStuff socket.io@2.3.0
+1281 silly linkStuff socket.io@2.3.0 has /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules as its parent node_modules
+1282 verbose linkBins socket.io@2.3.0
+1283 verbose linkMans socket.io@2.3.0
+1284 silly doSerial global-link 0
+1285 silly doParallel update-linked 0
+1286 silly doSerial install 13
+1287 silly install body-parser@1.19.0 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/body-parser-af57398b
+1288 info lifecycle body-parser@1.19.0~install: body-parser@1.19.0
+1289 silly lifecycle body-parser@1.19.0~install: no script for install, continuing
+1290 silly install mime@2.4.6 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/mime-b5139334
+1291 info lifecycle mime@2.4.6~install: mime@2.4.6
+1292 silly lifecycle mime@2.4.6~install: no script for install, continuing
+1293 silly install ms@2.1.2 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ms-cb48e9a3
+1294 info lifecycle ms@2.1.2~install: ms@2.1.2
+1295 silly lifecycle ms@2.1.2~install: no script for install, continuing
+1296 silly install debug@4.1.1 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/debug-be3e4e3b
+1297 info lifecycle debug@4.1.1~install: debug@4.1.1
+1298 silly lifecycle debug@4.1.1~install: no script for install, continuing
+1299 silly install cheerio@1.0.0-rc.3 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/cheerio-e87f0f81
+1300 info lifecycle cheerio@1.0.0-rc.3~install: cheerio@1.0.0-rc.3
+1301 silly lifecycle cheerio@1.0.0-rc.3~install: no script for install, continuing
+1302 silly install consign@0.1.6 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/consign-397ab5e3
+1303 info lifecycle consign@0.1.6~install: consign@0.1.6
+1304 silly lifecycle consign@0.1.6~install: no script for install, continuing
+1305 silly install ejs@3.1.3 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/ejs-0202180b
+1306 info lifecycle ejs@3.1.3~install: ejs@3.1.3
+1307 silly lifecycle ejs@3.1.3~install: no script for install, continuing
+1308 silly install express@4.17.1 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-0148151b
+1309 info lifecycle express@4.17.1~install: express@4.17.1
+1310 silly lifecycle express@4.17.1~install: no script for install, continuing
+1311 silly install express-validator@5.3.0 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/express-validator-2cc1343b
+1312 info lifecycle express-validator@5.3.0~install: express-validator@5.3.0
+1313 silly lifecycle express-validator@5.3.0~install: no script for install, continuing
+1314 silly install pg@8.2.1 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/pg-f55e0b13
+1315 info lifecycle pg@8.2.1~install: pg@8.2.1
+1316 silly lifecycle pg@8.2.1~install: no script for install, continuing
+1317 silly install puppeteer@4.0.1 /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging/puppeteer-e7cd6fbc
+1318 info lifecycle puppeteer@4.0.1~install: puppeteer@4.0.1
+1319 verbose lifecycle puppeteer@4.0.1~install: unsafe-perm in lifecycle false
+1320 verbose lifecycle puppeteer@4.0.1~install: PATH: /usr/share/npm/bin/node-gyp-bin:/home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/puppeteer/node_modules/.bin:/home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+1321 verbose lifecycle puppeteer@4.0.1~install: CWD: /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/puppeteer
+1322 silly lifecycle puppeteer@4.0.1~install: Args: [ '-c', 'node install.js' ]
+1323 silly lifecycle puppeteer@4.0.1~install: Returned: code: 1  signal: null
+1324 info lifecycle puppeteer@4.0.1~install: Failed to exec install script
+1325 verbose unlock done using /home/raffdevs/.npm/_locks/staging-f8977113cc547bd4.lock for /home/raffdevs/Devs Directory/JS/Projects/whats_forip/node_modules/.staging
+1326 silly rollbackFailedOptional Starting
+1327 silly rollbackFailedOptional Finishing
+1328 silly runTopLevelLifecycles Starting
+1329 silly runTopLevelLifecycles Finishing
+1330 silly install printInstalled
+1331 warn ws@7.3.0 requires a peer of bufferutil@^4.0.1 but none was installed.
+1332 warn ws@7.3.0 requires a peer of utf-8-validate@^5.0.2 but none was installed.
+1333 warn chat_forip_js@1.0.0 No description
+1334 verbose stack Error: puppeteer@4.0.1 install: `node install.js`
+1334 verbose stack Exit status 1
+1334 verbose stack     at EventEmitter.<anonymous> (/usr/share/npm/lib/utils/lifecycle.js:232:16)
+1334 verbose stack     at emitTwo (events.js:126:13)
+1334 verbose stack     at EventEmitter.emit (events.js:214:7)
+1334 verbose stack     at ChildProcess.<anonymous> (/usr/share/npm/lib/utils/spawn.js:24:14)
+1334 verbose stack     at emitTwo (events.js:126:13)
+1334 verbose stack     at ChildProcess.emit (events.js:214:7)
+1334 verbose stack     at maybeClose (internal/child_process.js:925:16)
+1334 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+1335 verbose pkgid puppeteer@4.0.1
+1336 verbose cwd /home/raffdevs/Devs Directory/JS/Projects/whats_forip
+1337 error Linux 5.3.0-62-generic
+1338 error argv "/usr/bin/node" "/usr/bin/npm" "i" "puppeteer"
+1339 error node v8.10.0
+1340 error npm  v3.5.2
+1341 error code ELIFECYCLE
+1342 error puppeteer@4.0.1 install: `node install.js`
+1342 error Exit status 1
+1343 error Failed at the puppeteer@4.0.1 install script 'node install.js'.
+1343 error Make sure you have the latest version of node.js and npm installed.
+1343 error If you do, this is most likely a problem with the puppeteer package,
+1343 error not with npm itself.
+1343 error Tell the author that this fails on your system:
+1343 error     node install.js
+1343 error You can get information on how to open an issue for this project with:
+1343 error     npm bugs puppeteer
+1343 error Or if that isn't available, you can get their info via:
+1343 error     npm owner ls puppeteer
+1343 error There is likely additional logging output above.
+1344 verbose exit [ 1, true ]

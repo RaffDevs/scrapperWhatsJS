@@ -8,6 +8,7 @@ module.exports = async(page) => {
             for(let file of files){
                 fs.unlinkSync(path.join(filesPath, file));
             };
+        
         };
     });
     await page.screenshot({path:filesPath+'/qrcode.jpeg', type: 'jpeg'});

@@ -1,116 +1,110 @@
-const db = require('../../config/dbConnection.js')();
+const db = require('../../config/dbConnection.js');
+const logs = require("../src/Helpers/logs");
 
-module.exports = () =>{
-    this.messagesToFront = () =>{
-        return new Promise((resolve, reject) => {
-            let query = "SELECT id, id_contato, mensagem, to_char(hora_mensagem, 'HH24:MI')  FROM mensagens WHERE mensagem_recebida = 'true' AND mensagem_nova = 'true' ORDER BY id ASC";
 
-            try{
-                db.connect((err, client, done) => {
-                    if(err){
-                        console.log('Erro ao conectar no banco', err);
-                    };
+async function messagesToFront() {
 
-                    client.query(query, (err, result) => {
-                        done();
-                        if(err){
-                            console.log('Um erro aconteceu no select', err);
-                        }
-                        resolve(result.rows);
-                    });
-                });
-            }catch(err){
-                console.log('Erro ao tentar conectar', err);
-            };
-        });
+    let query = `SELECT id, id_contato, mensagem, to_char(hora_mensagem, 'HH24:MI') 
+    FROM mensagens WHERE mensagem_recebida = 'true' AND mensagem_nova = 'true' ORDER BY id ASC`;
+
+    try {
+
+        let messages = await db.any(query);
+
+        return messages;
+
+    }
+    catch(error) {
+
+        console.log('Um erro ocorreu em dbMessageTrafic/messagesToFront', error);
+
+        logs(`Um erro ocorreu em dbMessagesTrafic/messagesToFront: ${error}`);
+
     };
 
-    this.updateMessages = (id) => {
-        return new Promise((resolve, reject) => {
-            let query = `UPDATE mensagens SET mensagem_nova = 'false' WHERE id = '${id}'`;
 
-            try{
-                db.connect((err, client, done) => {
-                    if(err){
-                        console.log('Um erro aconteceu na conexão', err);
-                    };
+};
 
-                    client.query(query, (err, resul) => {
-                        done();
-                        if(err){
-                            console.log('Ocorreu um erro no update', err);
-                        };
-                        resolve()
-                    });
-                });
-            }catch(err){
-                console.log('Erro ao tentar executar o update', err);
-            };
-        });
+async function updateMessages(id) {
+
+    let query = `UPDATE mensagens SET mensagem_nova = 'false' WHERE id = '${id}'`;
+
+    try {
+
+        await db.none(query);
+
+        console.log(`Mensagem ${id} atualizada com sucesso!`);
+
+    }
+    catch(error) {
+
+        console.log(`Ocorreu um erro em dbMessageTrafic/updateMessages`, error);
+
+        logs(`Ocorreu um erro em dbMessageTrafic/updateMessages: ${error}`);
+
     };
 
-    this.messageToPuppeteer = (nome=false) => {
-        return new Promise((resolve, reject) => {
-            let query;
-            if(nome === false){
-                query = "SELECT id, id_contato, mensagem FROM mensagens WHERE mensagem_recebida = 'false' AND mensagem_nova = 'true' ORDER BY id ASC ";
-            }
-            else{
-                query = `SELECT id, mensagem FROM mensagens WHERE id_contato = '${nome}' AND mensagem_recebida = 'false' AND mensagem_nova = 'true' ORDER BY id ASC`;
-            };
 
-            try{
-                db.connect((err, client, done) => {
-                    if(err){
-                        console.log("Um erro aconteceu ao conectar no banco", err);
-                    };
+};
 
-                    client.query(query, (err,result) => {
-                        done();
-                        if(err){
-                            console.log('Um erro aconteceu ao selecionar as mensagens', err);
-                        }
-                        else{
-                            console.log('Mensagens para o puppeteer: OK');
-                            resolve(result.rows);
-                        };
-                    });
-                });
-            }catch(err){
-                console.log('Erro ao tentar conectar com o banco', err);
-            };
-        });
+async function messagesToPuppeteer(nome=false) {
+
+    let query;
+
+    if(nome === false){
+        query = "SELECT id, id_contato, mensagem FROM mensagens WHERE mensagem_recebida = 'false' AND mensagem_nova = 'true' ORDER BY id ASC ";
+    }
+
+    else{
+        query = `SELECT id, mensagem FROM mensagens WHERE id_contato = '${nome}' AND mensagem_recebida = 'false' AND mensagem_nova = 'true' ORDER BY id ASC`;
     };
 
-    this.getLastMessage = (nome) => {
-        return new Promise((resolve, reject) => {
-            let query = 
-            `SELECT mensagem FROM mensagens WHERE id_contato = '${nome}'
-            AND mensagem_recebida = true AND mensagem != '-MIDIA-' 
-            ORDER BY id DESC 
-            LIMIT 1`;
+    try {
 
-            try{
-                db.connect((err, client, done) => {
-                    if(err){
-                        console.log('Houve um erro ao conectar ao DB', err);
-                    };
-                    client.query(query, (err, result) => {
+        let messages = await db.any(query);
 
-                        done();
+        return messages;
 
-                        if(err){
-                            console.log('Houve um erro ao executar a query', err);
-                        };
+    }
+    catch(error) {
 
-                        resolve(result.rows);
-                    });
-                });
+        console.log(`Ocorreu um erro em dbMessageTrafic/messagesToPuppteer`, error);
 
-            }catch(err){
-                console.log('Um erro aconteceu ao tentar conectar ao banco!', err);
-            };
-        });
+        logs(`Ocorreu um erro em dbMessageTrafic/messagesToPuppteer: ${error}`);
+
     };
-    return this;
+
+
+};
+
+async function getLastMessage(nome) {
+
+    let query = `SELECT mensagem FROM mensagens WHERE id_contato = '${nome}'
+                    AND mensagem_recebida = true AND mensagem != '-MIDIA-' 
+                    ORDER BY id DESC 
+                    LIMIT 1`;
+
+    try {
+
+        let lastMsg = await db.one(query);
+
+        return lastMsg;
+
+    }
+    catch(error) {
+
+        console.log(`Ocorreu um erro em dbMessageTrafic/getLastMessage`, error);
+
+        logs(`Ocorreu um erro em dbMessageTrafic/getLastMessage: ${error}`);
+
+    };
+
+
+};
+
+module.exports = {
+    msgToClient : messagesToFront,
+    msgToWhatsWeb : messagesToPuppeteer,
+    getLastMsg : getLastMessage,
+    updateMsg : updateMessages
 };

@@ -4,6 +4,8 @@
  */
 
 const sleep = require('../../src/Helpers/sleep');
+const logs = require("./logs");
+
 
 module.exports = async(page) =>{
     try{
@@ -15,7 +17,7 @@ module.exports = async(page) =>{
         await sleep(1000)
     }
     catch(err){
-        console.log('Aconteceu um erro no scroll', err)
+        logs(`Ocorreu um erro em renderAllConversation: ${err}`);
     }
 
 };

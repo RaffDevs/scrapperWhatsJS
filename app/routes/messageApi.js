@@ -1,16 +1,16 @@
-const dbApi = require('../models/dbApi')();
+const dbApi = require('../models/dbApi');
 
 
 module.exports = (app) => {
     app.post('/msg', (req, res) => {
-        let dados = req.body;
         
-        console.log(dados);
+        let dados = req.body;
 
-        let contato = dados.contato;
+        let contato = dados.contato.replace(' 55', '+55');
+        
         let mensagem = dados.mensagem;
 
-        dbApi.insertApiMessage(contato, mensagem)
+        dbApi.insertApi(contato, mensagem)
             .then((data) => {
                 res.send(data)
             });

@@ -1,51 +1,42 @@
-const db = require('../../config/dbConnection.js')();
+const db = require('../../config/dbConnection.js');
+const logs = require("../src/Helpers/logs");
 
-module.exports = () => {
 
-    this.insertApiMessage = (contactName, message, target='puppeteer') => {
-        return new Promise((resolve, reject) => {
-            let timeNow = new Date().toLocaleTimeString();
-            let query;
+async function insertApiMessage(contactName, message, target='puppeteer') {
 
-            // origin == 'puppeteer' : Mensagem capturada do whatsapp
-            if (target !== 'puppeteer') {
-                query =
-                    `INSERT INTO mensagens
-                (mensagem_recebida, mensagem, data_mensagem, hora_mensagem, mensagem_nova, id_contato)
-                VALUES ('T', '${message}', CURRENT_DATE, '${timeNow}', 'T', '${contactName}')`;
-            }
 
-            // orgin == 'frontend' : Mensagem capturada do front
-            else {
-                query =
-                    `INSERT INTO mensagens
-                (mensagem_recebida, mensagem, data_mensagem, hora_mensagem, mensagem_nova, id_contato)
-                VALUES ('F', '${message}', CURRENT_DATE, '${timeNow}', 'T', '${contactName}')`;
-            };
-            try {
-                db.connect((err, client, done) => {
-                    console.log('DEBUEGUEI!')
-                    if (err) {
-                        console.log('Um erro aconteceu no insert', err)
-                    };
-                    client.query(query, (err, result) => {
-                        done();
-                        if (err) {
-                            console.log('Um erro aconteceu no insert', err);
-                            resolve({warning: 'Ocorreu um erro', erro: err});
-                        };
+    let timeNow = new Date().toLocaleTimeString();
+    let query;
 
-                        resolve('Insert realizado com sucesso!');
+    // Se target == 'puppeteer' : Mensagem capturada do whatsappweb
+    if (target !== 'puppeteer') {
+        query =
+            `INSERT INTO mensagens
+        (mensagem_recebida, mensagem, data_mensagem, hora_mensagem, mensagem_nova, id_contato)
+        VALUES ('T', '${message}', CURRENT_DATE, '${timeNow}', 'T', '${contactName}')`;
+    }
 
-                    });
-                });
-
-            } catch (err) {
-                console.log('Um erro aconteceu em dbMessages', err)
-            };
-        });
+    // Se target == 'frontend' : Mensagem capturada do front
+    else {
+        query =
+            `INSERT INTO mensagens
+        (mensagem_recebida, mensagem, data_mensagem, hora_mensagem, mensagem_nova, id_contato)
+        VALUES ('F', '${message}', CURRENT_DATE, '${timeNow}', 'T', '${contactName}')`;
     };
 
-    return this;
+    try {
 
+        await db.none(query);
+        console.log('Mensagem inserida via api!');
+    }
+    catch(error) {
+
+        console.log("Erro ao inserir mensagem via api!");
+
+    }
+    
+};
+
+module.exports = {
+    insertApi: insertApiMessage
 };
